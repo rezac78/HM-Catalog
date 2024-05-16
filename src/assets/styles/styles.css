@@ -1,0 +1,13 @@
+@import url(yekanbakh.css); /* لینک فایلی که وظیفه بارگذاری فونت ها را برعهده دارد */
+body {
+	font-family: Yekan Bakh  !important;
+	direction: rtl;
+	background-color: #cdcdcd;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6,input, textarea, button {
+	font-family: Yekan Bakh !important;
+}
+h1 {
+	font-weight: bold;
+}

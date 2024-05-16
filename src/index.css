@@ -1,0 +1,25 @@
+@import url("/src/assets/styles/styles.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Yekan Bakh', serif ;
+    background: white;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+}
+.app-content {
+    scrollbar-width: none;
+}
+.dotted-list li::before {
+    content: '•'; /* Unicode for a dot */
+    position: absolute;
+    right: 0;
+    top: 5;
+    color: black; /* Change color if needed */
+}

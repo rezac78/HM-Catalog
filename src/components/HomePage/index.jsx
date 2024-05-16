@@ -1,0 +1,76 @@
+import HomeContentPage from "../shared/HomeContentPage";
+import {
+  homeMain,
+  homeMainCard,
+  homeDeskTopMainCard,
+} from "../../Event/fakeData";
+import CardMain from "../shared/CardMain";
+import CardDeskTop from "../DeskTop/CardMain";
+import HeaderTitle from "../DeskTop/HeaderTitle";
+function HomePage({ isScrolled, isWide }) {
+  return (
+    <div
+      className={`absolute md:static top-[25%] left-1/2 -translate-x-1/2 md:translate-x-[unset] flex flex-col w-[95%] md:w-full py-10 md:h-full app-content ${
+        isScrolled ? "overflow-y-auto" : ""
+      }  p-4 md:p-0 max-h-[84vh] z-50 bg-[#FFFFFF] rounded-t-[40px] md:rounded-t-[0]`}
+    >
+      {!isWide ? (
+        <>
+          {homeMain.map((e) => (
+            <HomeContentPage
+              key={e.id}
+              title={e.Title}
+              content={e.content}
+              type={true}
+            />
+          ))}
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around py-10">
+            {homeMainCard.map((e) => (
+              <CardMain
+                key={e.id}
+                Title={e.Title}
+                Image={e.image}
+                link={e.link}
+                type={true}
+              />
+            ))}
+          </div>
+          
+        </>
+      ) : (
+        <>
+          <div className="max-w-[1300px] flex justify-center mt-10">
+            <HeaderTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+          </div>
+          <div className="flex justify-between mt-10 w-full border-t-2 border-[#54A0DC]">
+            <div className="flex mr-10">
+              {homeMain.map((e) => (
+                <HomeContentPage
+                  key={e.id}
+                  title={e.Title}
+                  content={e.content}
+                  type={true}
+                />
+              ))}
+            </div>
+            <div className="relative">
+              <img alt="notFound" src="/images/backgroundMain.svg" />
+              <img
+                className="absolute md:top-10 md:left-20 lg:left-40 lg:top-20 w-[50%] h-[50%]"
+                alt="notFound"
+                src="/images/mainImage.svg"
+              />
+            </div>
+          </div>
+          <div className="grid grid-cols-6 self-center gap-3 mt-10 bg-[#1E73BF] rounded-md py-6">
+            {homeDeskTopMainCard.map((e) => (
+              <CardDeskTop image={e.image} imageBack={e.imageBack} link={e.link} Title={e.Title} />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+}
+
+export default HomePage;
