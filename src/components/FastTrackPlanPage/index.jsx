@@ -7,8 +7,8 @@ import HomeContentPage from "../shared/HomeContentPage";
 function FastTrackPlanPage({ isScrolled, isWide }) {
   return (
     <div
-      className={`absolute md:static top-[25%] left-1/2 -translate-x-1/2 md:translate-x-[unset] flex flex-col w-[95%] md:w-full py-10 md:h-full app-content ${
-        isScrolled ? "overflow-y-auto" : ""
+      className={`absolute md:static top-[300px] left-1/2 -translate-x-1/2 md:translate-x-[unset] flex flex-col w-[95%] md:w-full py-10 md:h-full app-content ${
+        isScrolled ? "overflow-y-auto top-[450px]" : ""
       } p-4 md:p-0 max-h-[84vh] z-50 bg-[#FFFFFF] rounded-t-[40px] md:rounded-t-[0]`}
     >
       {!isWide ? (
@@ -22,17 +22,6 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around">
-            {FastTrackPlanMainCard.map((e) => (
-              <CardMain
-                key={e.id}
-                Title={e.Title}
-                Image={e.image}
-                link={e.link}
-                type={false}
-              />
-            ))}
-          </div>
           <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around">
             {FastTrackPlanMainCard.map((e) => (
               <CardMain
