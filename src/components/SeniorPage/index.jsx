@@ -40,7 +40,7 @@ function MastersPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="کارشناسی ارشد" titleLink="/" />
+          <HeaderTitle title="کارشناسی ارشد" titleLink="/university" />
           <div className="mx-auto my-10">
             {mastersMain.map((e) => (
               <HomeContentPage

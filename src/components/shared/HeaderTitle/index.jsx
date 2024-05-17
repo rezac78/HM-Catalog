@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function HeaderTitle({ title, titleLink }) {
   return (
     <>
-      <Link to={titleLink} className="flex md:hidden justify-end gap-x-2">
+      <Link to={titleLink} className="flex md:hidden justify-end gap-x-2 mt-2">
         <img alt="notfound" src="/icon/icon.svg" />
         <span>بازگشت</span>
       </Link>

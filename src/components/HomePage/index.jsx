@@ -21,7 +21,7 @@ function HomePage({ isScrolled, isWide }) {
               type={true}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 pb-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 mb-[40px]">
             {homeMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -32,7 +32,6 @@ function HomePage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          
         </>
       ) : (
         <>

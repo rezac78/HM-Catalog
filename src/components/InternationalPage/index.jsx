@@ -1,5 +1,5 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { InternationalMain, PartnershipMain2 } from "../../Event/fakeData";
+import { InternationalMain } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";

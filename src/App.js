@@ -48,6 +48,9 @@ import BaPage from "./components/BaPage";
 import PhdPage from "./components/PHDPage";
 import useWidthExceeds from "./hooks/useWidthExceeds ";
 import ConsentPage from "./components/ConsentPage";
+import CouncilBaPage from "./components/CouncilBaPage";
+import CouncilMetacodePage from "./components/CouncilMetacodePage";
+import CouncilFastTrackPlanPage from "./components/CouncilFastTrackPlanPage";
 const componentMapping = {
   home: HomePage,
   design: DesignPage,
@@ -65,6 +68,9 @@ const componentMapping = {
   phd: PhdPage,
   PHDmasters: PHDmastersPage,
   council: councilPage,
+  councilBa: CouncilBaPage,
+  councilMetacode: CouncilMetacodePage,
+  councilFastTrackPlan: CouncilFastTrackPlanPage,
   baPlus: baPlusPage,
   baProfessional: BaProfessionalPage,
   metacode: MetacodePage,

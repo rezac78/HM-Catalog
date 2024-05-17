@@ -11,7 +11,7 @@ function OrganizationalLanguageBAPage({ isScrolled, isWide }) {
         <>
           <HeaderTitle
             title="دوره های زبان تخصصی مدیریت کسب و کار (BA)"
-            titleLink="/"
+            titleLink="/languageLearning"
           />
           {OrganizationalLanguageBAMain.map((e) => (
             <HomeContentPage

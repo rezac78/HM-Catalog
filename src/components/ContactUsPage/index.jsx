@@ -27,14 +27,14 @@ function ContactUsPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-12">
             <ListForm
               title={ContactUsTables[0].Title}
               Data={ContactUsTables[0].linkList}
               type=""
             />
           </div>
-          <div className="my-6">
+          <div className="mb-12">
             <ListForm
               title={ContactUsTables2[0].Title}
               Data={ContactUsTables2[0].linkList}

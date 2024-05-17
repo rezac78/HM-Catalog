@@ -11,7 +11,7 @@ function OrganizationalLanguagePage({ isScrolled, isWide }) {
         <>
           <HeaderTitle
             title="دوره های زبان تخصصی سازمانی"
-            titleLink="/"
+            titleLink="/languageLearning"
           />
           {OrganizationalLanguageMain.map((e) => (
             <HomeContentPage

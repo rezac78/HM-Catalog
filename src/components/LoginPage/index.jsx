@@ -16,7 +16,7 @@ function LoginPage({ isScrolled }) {
           type={false}
         />
       ))}
-      <div className="mb-14">
+      <div className="mb-18">
       <LoginPath />
       </div>
       </div>

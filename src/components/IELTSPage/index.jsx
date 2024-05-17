@@ -9,7 +9,7 @@ function IELTSPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="دوره IELTS" titleLink="/" />
+          <HeaderTitle title="دوره IELTS" titleLink="/languageLearning" />
           {IELTSMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -25,7 +25,7 @@ function IELTSPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="دوره IELTS" titleLink="/" />
+          <HeaderTitle title="دوره IELTS" titleLink="/languageLearning" />
           <div className="mx-auto my-10">
             {IELTSMain.map((e) => (
               <HomeContentPage

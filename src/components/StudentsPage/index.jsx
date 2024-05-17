@@ -19,7 +19,7 @@ function StudentsPage({ isScrolled, isWide }) {
                                                         type={false}
                                                 />
                                         ))}
-                                        <div className="mb-10">
+                                        <div className="mb-14">
                                                 <TableForm />
                                         </div>
                                 </>

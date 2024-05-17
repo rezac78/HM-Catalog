@@ -1,21 +1,16 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import {
-  baProfessionalMain,
-  baProfessionalTables,
-  baProfessionalTables2,
-} from "../../Event/fakeData";
+import { ConsultationMain, ConsultationMainTable,ConsultationMainTable2 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
-
-function BaProfessionalPage({ isScrolled, isWide }) {
+function CouncilMetacodePage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="BA تخصصی" titleLink="/BA" />
-          {baProfessionalMain.map((e) => (
+          <HeaderTitle title="مشاوره تخصصی" titleLink="/metacode" />
+          {ConsultationMain.map((e) => (
             <HomeContentPage
               key={e.id}
               title={e.Title}
@@ -25,15 +20,15 @@ function BaProfessionalPage({ isScrolled, isWide }) {
           ))}
           <div className="mb-14">
             <ListForm
-              title={baProfessionalTables[0].Title}
-              Data={baProfessionalTables[0].linkList}
+              title={ConsultationMainTable[0].Title}
+              Data={ConsultationMainTable[0].linkList}
               type=""
             />
           </div>
           <div className="mb-14">
             <ListForm
-              title={baProfessionalTables2[0].Title}
-              Data={baProfessionalTables2[0].linkList}
+              title={ConsultationMainTable2[0].Title}
+              Data={ConsultationMainTable2[0].linkList}
               type=""
             />
           </div>
@@ -44,9 +39,9 @@ function BaProfessionalPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="BA تخصصی" titleLink="/" />
+          <HeaderTitle title="مشاوره تخصصی" titleLink="/" />
           <div className="mx-auto my-10">
-            {baProfessionalMain.map((e) => (
+            {ConsultationMain.map((e) => (
               <HomeContentPage
                 key={e.id}
                 title={e.Title}
@@ -57,15 +52,15 @@ function BaProfessionalPage({ isScrolled, isWide }) {
           </div>
           <div className="my-6">
             <ListForm
-              title={baProfessionalTables[0].Title}
-              Data={baProfessionalTables[0].linkList}
+              title={ConsultationMainTable[0].Title}
+              Data={ConsultationMainTable[0].linkList}
               type=""
             />
           </div>
           <div className="my-6">
             <ListForm
-              title={baProfessionalTables2[0].Title}
-              Data={baProfessionalTables2[0].linkList}
+              title={ConsultationMainTable2[0].Title}
+              Data={ConsultationMainTable2[0].linkList}
               type=""
             />
           </div>
@@ -75,4 +70,4 @@ function BaProfessionalPage({ isScrolled, isWide }) {
   );
 }
 
-export default BaProfessionalPage;
+export default CouncilMetacodePage;

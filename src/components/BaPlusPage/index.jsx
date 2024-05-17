@@ -19,7 +19,7 @@ function BaPlusPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-14">
             <ListForm
               title={baPlusTables[0].Title}
               Data={baPlusTables[0].linkList}

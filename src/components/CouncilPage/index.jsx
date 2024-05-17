@@ -9,7 +9,7 @@ function CouncilPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="مشاوره تخصصی" titleLink="/" />
+          <HeaderTitle title="مشاوره تخصصی" titleLink="/university" type="university" />
           {ConsultationMain.map((e) => (
             <HomeContentPage
               key={e.id}

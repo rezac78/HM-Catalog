@@ -398,6 +398,36 @@ export const path = [
       { id: 2, item: "آموزش از راه دور بین­ الملل", link: "/International" },
     ],
   },
+  {
+    id: 41,
+    path: "/professionalConsultationBa",
+    component: "councilBa",
+    linkList: [
+      { id: 1, item: "طرح ها", link: "/design" },
+      { id: 2, item: "BA", link: "/ba" },
+      { id: 3, item: "مشاوره تخصصی", link: "/council" },
+    ],
+  },
+  {
+    id: 42,
+    path: "/professionalConsultationMetacode",
+    component: "councilMetacode",
+    linkList: [
+      { id: 1, item: "طرح ها", link: "/design" },
+      { id: 2, item: "متا کد", link: "/metacode" },
+      { id: 3, item: "مشاوره تخصصی", link: "/council" },
+    ],
+  },
+  {
+    id: 43,
+    path: "/professionalConsultationFastTrackPlan",
+    component: "councilFastTrackPlan",
+    linkList: [
+      { id: 1, item: "طرح ها", link: "/design" },
+      { id: 2, item: "طرح شتاب", link: "/FastTrackPlan" },
+      { id: 3, item: "مشاوره تخصصی", link: "/council" },
+    ],
+  },
 ];
 
 export const homeMain = [
@@ -890,7 +920,7 @@ export const FastTrackPlanMainCard = [
     id: 3,
     Title: "مشاوره تخصصی",
     image: "",
-    link: "/professionalConsultation",
+    link: "/professionalConsultationFastTrackPlan",
   },
 ];
 export const baMainCard = [
@@ -910,7 +940,7 @@ export const baMainCard = [
     id: 3,
     Title: "مشاوره تخصصی",
     image: "",
-    link: "/professionalConsultation",
+    link: "/professionalConsultationBa",
   },
 ];
 export const ParticipationCard = [
@@ -1008,7 +1038,7 @@ export const metaTagMainCard = [
     id: 5,
     Title: "مشاوره تخصصی",
     image: "",
-    link: "/professionalConsultation",
+    link: "/professionalConsultationMetacode",
   },
 ];
 export const languageLearningMainCard = [

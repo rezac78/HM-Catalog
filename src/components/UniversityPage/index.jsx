@@ -23,7 +23,7 @@ function UniversityPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-6">
+          <div className="mb-5">
             <ListForm
               title={universityTable[0].Title}
               Data={universityTable[0].linkList}
@@ -48,7 +48,7 @@ function UniversityPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="دانشگاهی" titleLink="/" />
+          <HeaderTitle title="دانشگاهی" titleLink="/design" />
           <div className="mx-auto my-10">
             {universityMain.map((e) => (
               <HomeContentPage

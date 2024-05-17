@@ -19,7 +19,7 @@ function AboutPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 pb-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 mb-14">
             {AboutMainCard.map((e) => (
               <CardMain
                 key={e.id}

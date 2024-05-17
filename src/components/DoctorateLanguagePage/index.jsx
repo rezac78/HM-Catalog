@@ -11,7 +11,7 @@ function IDoctorateLanguagePage({ isScrolled, isWide }) {
         <>
           <HeaderTitle
             title="دوره تخصصی آزمون های زبان جامع دکتری "
-            titleLink="/"
+            titleLink="/languageLearning"
           />
           {DoctorateLanguageMain.map((e) => (
             <HomeContentPage

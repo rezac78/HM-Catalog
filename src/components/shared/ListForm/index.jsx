@@ -15,7 +15,7 @@ function ListForm({ title, Data, type }) {
       >
         <span className={`${type === "listNumber" ? "text-[14px] md:text-[18px] font-bold text-[#4F4F4F]" : "text-[#ffff]"}`}>{title}</span>
       </div>
-      <div className="flex flex-col justify-center text-right p-4 w-full">
+      <div className="flex flex-col justify-center text-right px-2 py-2 w-full">
         <span className="text-[14px] font-bold text-[#4F4F4F]">
           {type === "File" ? (
             <div className="grid grid-cols-1 md:grid-cols-2 self-center gap-3 ">
