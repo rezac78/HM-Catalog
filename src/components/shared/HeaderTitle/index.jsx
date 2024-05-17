@@ -7,7 +7,7 @@ function HeaderTitle({ title, titleLink }) {
         <img alt="notfound" src="/icon/icon.svg" />
         <span>بازگشت</span>
       </Link>
-      <div className="flex justify-start gap-x-2 mt-5 md:mt-0">
+      <div className="flex justify-start gap-x-2 mt-1 md:mt-0">
         <div className="relative">
           <img
             className="-mt-[1.5px]"
