@@ -8,13 +8,10 @@ import HeaderTitle from "../shared/HeaderTitle";
 import CardMain from "../shared/CardMain";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
+import HeaderScroll from "../shared/HeaderScroll";
 function UniversityPage({ isScrolled, isWide }) {
   return (
-    <div
-      className={`absolute md:static top-[300px] left-1/2 -translate-x-1/2 md:translate-x-[unset] flex flex-col w-[95%] md:w-full py-10 md:h-full app-content ${
-        isScrolled ? "overflow-y-auto top-[450px]" : ""
-      } p-4 md:p-0 max-h-[84vh] z-50 bg-[#FFFFFF] rounded-t-[40px] md:rounded-t-[0]`}
-    >
+    <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
           <HeaderTitle title="دانشگاهی" titleLink="/" />
@@ -82,7 +79,7 @@ function UniversityPage({ isScrolled, isWide }) {
           </div>
         </div>
       )}
-    </div>
+    </HeaderScroll>
   );
 }
 

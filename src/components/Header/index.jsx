@@ -7,7 +7,7 @@ function Header({ type, isScrolled, links }) {
       {!isScrolled ? (
         <>
           <header
-            className={`fixed md:flex md:static top-0 w-full z-30 h-96 md:h-28 bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
+            className={`fixed md:flex md:static top-0 w-full z-30 h-[384px] md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
           >
             <div className="pt-8 md:pt-4 flex justify-center md:justify-start">
               <img
@@ -25,7 +25,7 @@ function Header({ type, isScrolled, links }) {
         </>
       ) : (
         <header
-          className={`fixed top-0 w-full z-30 h-80 bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg`}
+          className={`fixed top-0 w-full z-30 h-[320px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg`}
         >
           <div className="py-2 flex justify-start">
             <img
