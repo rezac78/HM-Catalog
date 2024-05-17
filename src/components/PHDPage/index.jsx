@@ -26,7 +26,7 @@ function PhdPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-10">
+          <div className="mb-14">
             <ListForm
               title={PhdMainTable[0].Title}
               Data={PhdMainTable[0].linkList}

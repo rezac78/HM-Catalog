@@ -18,14 +18,14 @@ function CouncilPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-10">
+          <div className="mb-14">
             <ListForm
               title={ConsultationMainTable[0].Title}
               Data={ConsultationMainTable[0].linkList}
               type=""
             />
           </div>
-          <div className="mb-10">
+          <div className="mb-14">
             <ListForm
               title={ConsultationMainTable2[0].Title}
               Data={ConsultationMainTable2[0].linkList}
