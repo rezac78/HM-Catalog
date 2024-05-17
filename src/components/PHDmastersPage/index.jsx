@@ -23,21 +23,21 @@ function PHDmastersPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={PHDmastersMainTable[0].Title}
               Data={PHDmastersMainTable[0].linkList}
               type=""
             />
           </div>
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={PHDmastersMainTable2[0].Title}
               Data={PHDmastersMainTable2[0].linkList}
               type=""
             />
           </div>
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={PHDmastersMainTable3[0].Title}
               Data={PHDmastersMainTable3[0].linkList}

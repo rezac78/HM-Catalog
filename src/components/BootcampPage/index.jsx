@@ -11,13 +11,14 @@ function BootcampPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="بوت کمپ و اشتغال" titleLink="/" />
-          <div className="my-6">
+          <div className="mb-6">
             <ListForm
               title={bootcampTables[0].Title}
               Data={bootcampTables[0].linkList}
               type=""
             />
           </div>
+          <div className="mb-6">
           {bootcampMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -26,6 +27,7 @@ function BootcampPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
+          </div>
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">

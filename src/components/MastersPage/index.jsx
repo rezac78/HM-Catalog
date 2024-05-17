@@ -19,7 +19,7 @@ function MastersPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={seniorTables[0].Title}
               Data={seniorTables[0].linkList}

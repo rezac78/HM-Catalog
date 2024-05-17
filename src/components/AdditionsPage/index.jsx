@@ -10,7 +10,7 @@ function AdditionsPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="ارزش افزوده‌های ما" titleLink="/" />
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={seniorTable[0].Title}
               Data={seniorTable[0].linkList}

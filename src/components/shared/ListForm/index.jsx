@@ -5,7 +5,7 @@ function ListForm({ title, Data, type }) {
   return (
     <div
       className={`${
-        type === "listNumber" ? "" : "mt-10 border border-[#387AB4]"
+        type === "listNumber" ? "" : "mt-5 border border-[#387AB4]"
       }  rounded-t-lg`}
     >
       <div
@@ -30,7 +30,7 @@ function ListForm({ title, Data, type }) {
               } list-none pl-0`}
             >
               {Data.map((e, index) => (
-                <li className={`relative ${type === "listNumber" ? "pr-0 py-1" :"pr-3 py-3"}`}>
+                <li className={`relative ${type === "listNumber" ? "pr-0 py-1" :"pr-3 py-2"}`}>
                   {type === "listNumber" ? index + 1 + "_" + e.item : e.item}
                 </li>
               ))}

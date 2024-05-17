@@ -10,7 +10,7 @@ function CollaborationSpacePage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="فضای همکاری" titleLink="/" />
-          <div className="my-6">
+          <div className="mb-10">
             <ListForm
               title={CollaborationSpaceTables[0].Title}
               Data={CollaborationSpaceTables[0].linkList}

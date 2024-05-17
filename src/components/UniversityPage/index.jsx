@@ -30,7 +30,7 @@ function UniversityPage({ isScrolled, isWide }) {
               type="listNumber"
             />
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around py-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pb-10">
             {universityMainCard.map((e) => (
               <CardMain
                 key={e.id}

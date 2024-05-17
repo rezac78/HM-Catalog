@@ -34,7 +34,7 @@ function MetacodePage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-2">
             <ListForm
               title={metacodeMainCard[0].Title}
               Data={metacodeMainCard[0].linkList}
@@ -49,7 +49,7 @@ function MetacodePage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around py-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pb-10">
             {metaTagMainCard.map((e) => (
               <CardMain
                 key={e.id}
