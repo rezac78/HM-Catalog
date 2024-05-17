@@ -21,6 +21,7 @@ import baPlusPage from "./components/BaPlusPage";
 import BaProfessionalPage from "./components/BaProfessionalPage";
 import MetacodePage from "./components/MetacodePage";
 import BootcampPage from "./components/BootcampPage";
+import PermissionsPage from "./components/PermissionsPage";
 import CertificationsPage from "./components/CertificationsPage";
 import FastTrackPlanPage from "./components/FastTrackPlanPage";
 import CollaborationSpacePage from "./components/CollaborationSpacePage";
@@ -30,7 +31,16 @@ import DoctorateLanguagePage from "./components/DoctorateLanguagePage";
 import ClubPage from "./components/ClubPage";
 import OrganizationalLanguageBAPage from "./components/OrganizationalLanguageBAPage";
 import OrganizationalLanguagePage from "./components/OrganizationalLanguagePage";
+import StudentsPage from "./components/StudentsPage";
+import SatisfactionPage from "./components/SatisfactionPage";
+import CooperationPage from "./components/CooperationPage";
+import ChartPage from "./components/ChartPage";
+import AboutPage from "./components/AboutPage";
 import IELTSPage from "./components/IELTSPage";
+import ContactUsPage from "./components/ContactUsPage";
+import ParticipationPage from "./components/ParticipationPage";
+import PartnershipPage from "./components/PartnershipPage";
+import InternationalPage from "./components/InternationalPage";
 import FagPage from "./components/FagPage";
 import CurrencyIncomePage from "./components/CurrencyIncomePage";
 import CompleteAcademicDocumentPage from "./components/CompleteAcademicDocumentPage";
@@ -72,6 +82,16 @@ const componentMapping = {
   OrganizationalLanguage: OrganizationalLanguagePage,
   fag: FagPage,
   club: ClubPage,
+  Students: StudentsPage,
+  satisfaction: SatisfactionPage,
+  about: AboutPage,
+  permissions: PermissionsPage,
+  Cooperation: CooperationPage,
+  Chart: ChartPage,
+  Contactus: ContactUsPage,
+  Participation: ParticipationPage,
+  Partnership: PartnershipPage,
+  International: InternationalPage,
 };
 function App() {
   const isScrolled = useScrollBeyond(1);

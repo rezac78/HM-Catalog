@@ -8,25 +8,51 @@ import HeaderScroll from "../shared/HeaderScroll";
 function AchievementsPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
-      {isWide && (
-        <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+      {!isWide ? (
+        <>
+          {isWide && (
+            <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+          )}
+          <div className="mb-10">
+            <HeaderTitle title="دستاوردها" titleLink="/glory" />
+          </div>
+          {AchievementsMain.map((e) => (
+            <HomeContentPage
+              key={e.id}
+              title={e.Title}
+              content={e.content}
+              type={false}
+            />
+          ))}
+          <div className="pb-40 md:mt-20">
+            {AchievementsButton.map((e) => (
+              <Button href={e.href} title={e.Title} Image={e.img} />
+            ))}
+          </div>
+        </>
+      ) : (
+        <div className="max-w-[1300px] mx-auto px-20">
+          {isWide && (
+            <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+          )}
+          <div className="mb-10">
+            <HeaderTitle title="دستاوردها" titleLink="/glory" />
+          </div>
+          {AchievementsMain.map((e) => (
+            <HomeContentPage
+              key={e.id}
+              title={e.Title}
+              content={e.content}
+              type={false}
+            />
+          ))}
+          <div className="pb-40 md:mt-20">
+            {AchievementsButton.map((e) => (
+              <Button href={e.href} title={e.Title} Image={e.img} />
+            ))}
+          </div>
+        </div>
       )}
-      <div className="my-10">
-        <HeaderTitle title="دستاوردها" titleLink="/glory" />
-      </div>
-      {AchievementsMain.map((e) => (
-        <HomeContentPage
-          key={e.id}
-          title={e.Title}
-          content={e.content}
-          type={false}
-        />
-      ))}
-      <div className="pb-40 md:mt-20">
-        {AchievementsButton.map((e) => (
-          <Button href={e.href} title={e.Title} Image={e.img} />
-        ))}
-      </div>
     </HeaderScroll>
   );
 }

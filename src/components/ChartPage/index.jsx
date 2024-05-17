@@ -1,17 +1,17 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { sstudentMain } from "../../Event/fakeData";
+import {
+        ChartMain,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
-import TableForm from "../shared/TableForm";
-
-function StudentsPage({ isScrolled, isWide }) {
+function ChartPage({ isScrolled, isWide }) {
         return (
                 <HeaderScroll isScrolled={isScrolled}>
                         {!isWide ? (
                                 <>
-                                        <HeaderTitle title="دانشجویان" titleLink="/achievements" />
-                                        {sstudentMain.map((e) => (
+                                        <HeaderTitle title="چارت سازمانی" titleLink="/about" />
+                                        {ChartMain.map((e) => (
                                                 <HomeContentPage
                                                         key={e.id}
                                                         title={e.Title}
@@ -19,8 +19,8 @@ function StudentsPage({ isScrolled, isWide }) {
                                                         type={false}
                                                 />
                                         ))}
-                                        <div className="mb-10">
-                                                <TableForm />
+                                        <div className="my-14">
+                                                <img alt="notFound" src="/images/chart.svg" className="w-full h-full" />
                                         </div>
                                 </>
                         ) : (
@@ -29,9 +29,9 @@ function StudentsPage({ isScrolled, isWide }) {
                                                 <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
                                         </div>
                                         <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-                                        <HeaderTitle title="دانشجویان" titleLink="/achievements" />
+                                        <HeaderTitle title="چارت سازمانی" titleLink="/about" />
                                         <div className="mx-auto my-10">
-                                                {sstudentMain.map((e) => (
+                                                {ChartMain.map((e) => (
                                                         <HomeContentPage
                                                                 key={e.id}
                                                                 title={e.Title}
@@ -40,8 +40,8 @@ function StudentsPage({ isScrolled, isWide }) {
                                                         />
                                                 ))}
                                         </div>
-                                        <div className="my-10">
-                                                <TableForm />
+                                        <div className="my-14">
+                                                <img alt="notFound" src="/images/chart.svg" className="w-full h-full" />
                                         </div>
                                 </div>
                         )}
@@ -49,4 +49,4 @@ function StudentsPage({ isScrolled, isWide }) {
         );
 }
 
-export default StudentsPage;
+export default ChartPage;
