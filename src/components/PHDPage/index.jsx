@@ -9,7 +9,7 @@ function PhdPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="دکتری" titleLink="/" />
+          <HeaderTitle title="دکتری" titleLink="/university" />
           {PhdMain.map((e) => (
             <HomeContentPage
               key={e.id}

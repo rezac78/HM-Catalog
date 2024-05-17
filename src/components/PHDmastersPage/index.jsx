@@ -14,7 +14,7 @@ function PHDmastersPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="ارشد و دکتری ویژه" titleLink="/" />
+          <HeaderTitle title="ارشد و دکتری ویژه" titleLink="/university" />
           {PHDmastersMain.map((e) => (
             <HomeContentPage
               key={e.id}

@@ -14,7 +14,7 @@ function languageLearningPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="زبان" titleLink="/" />
+          <HeaderTitle title="زبان" titleLink="/design" />
           {languageLearningMain.map((e) => (
             <HomeContentPage
               key={e.id}

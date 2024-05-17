@@ -9,7 +9,7 @@ function ClubPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="باشگاه همراهی" titleLink="/" />
+          <HeaderTitle title="باشگاه همراهی" titleLink="/design" />
           {clubMain.map((e) => (
             <HomeContentPage
               key={e.id}

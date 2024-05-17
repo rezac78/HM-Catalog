@@ -14,7 +14,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
         <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
       )}
       <div className="my-10">
-        <HeaderTitle title="کارشناسی ارشد" titleLink="/" />
+        <HeaderTitle title="کارشناسی ارشد" titleLink="/achievements" />
       </div>
       {MastersGraduatesMain.map((e) => (
         <HomeContentPage

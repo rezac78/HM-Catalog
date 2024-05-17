@@ -10,7 +10,7 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="طرح شتاب" titleLink="/" />
+          <HeaderTitle title="طرح شتاب" titleLink="/design" />
           {FastTrackPlanMain.map((e) => (
             <HomeContentPage
               key={e.id}

@@ -17,7 +17,7 @@ function MetacodePage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="متاکد" titleLink="/" />
+          <HeaderTitle title="متاکد" titleLink="/design" />
           {metacodeMain2.map((e) => (
             <HomeContentPage
               key={e.id}

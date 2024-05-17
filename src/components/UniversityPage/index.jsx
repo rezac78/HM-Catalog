@@ -14,7 +14,7 @@ function UniversityPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="دانشگاهی" titleLink="/" />
+          <HeaderTitle title="دانشگاهی" titleLink="/design" />
           {universityMain.map((e) => (
             <HomeContentPage
               key={e.id}

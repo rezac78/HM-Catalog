@@ -255,8 +255,7 @@ export const path = [
     component: "languageLearning",
     linkList: [
       { id: 1, item: "طرح ها", link: "/design" },
-      { id: 2, item: "طرح شتاب", link: "/FastTrackPlan" },
-      { id: 3, item: "زبان", link: "/languageLearning" },
+      { id: 2, item: "زبان", link: "/languageLearning" },
     ],
   },
   {

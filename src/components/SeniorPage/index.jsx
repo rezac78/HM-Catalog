@@ -9,7 +9,7 @@ function MastersPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="کارشناسی ارشد" titleLink="/" />
+          <HeaderTitle title="کارشناسی ارشد" titleLink="/university" />
           {mastersMain.map((e) => (
             <HomeContentPage
               key={e.id}

@@ -12,7 +12,7 @@ function AchievementsPage({ isScrolled, isWide }) {
         <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
       )}
       <div className="my-10">
-        <HeaderTitle title="دستاوردها" titleLink="/" />
+        <HeaderTitle title="دستاوردها" titleLink="/glory" />
       </div>
       {AchievementsMain.map((e) => (
         <HomeContentPage

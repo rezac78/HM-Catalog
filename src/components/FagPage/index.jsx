@@ -9,7 +9,7 @@ function FagPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="سوالات متداول" titleLink="/" />
+          <HeaderTitle title="سوالات متداول" titleLink="/design" />
           <div className="my-6">
             <ListForm
               title={fagTables[0].Title}
