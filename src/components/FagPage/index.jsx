@@ -25,7 +25,7 @@ function FagPage({ isScrolled, isWide }) {
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
           <HeaderTitle title="سوالات متداول" titleLink="/" />
-          <div className="my-6">
+          <div className="mb-14">
             <ListForm
               title={fagTables[0].Title}
               Data={fagTables[0].linkList}

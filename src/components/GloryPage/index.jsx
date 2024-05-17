@@ -10,7 +10,7 @@ function GloryPage({ isScrolled, isWide }) {
       {isWide && (
         <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
       )}
-      <div className="my-10">
+      <div className="mb-10">
         <HeaderTitle title="افتخارات" titleLink="/" />
       </div>
       {gloryMain.map((e) => (

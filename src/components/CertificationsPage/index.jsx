@@ -9,7 +9,7 @@ function CertificationsPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="اخذ مدرک و مجوزها" titleLink="/" />
+          <HeaderTitle title="اخذ مدرک و مجوزها" titleLink="/metacode" />
           {CertificationsMain.map((e) => (
             <HomeContentPage
               key={e.id}

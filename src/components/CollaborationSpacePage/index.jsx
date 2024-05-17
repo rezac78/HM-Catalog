@@ -9,7 +9,7 @@ function CollaborationSpacePage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="فضای همکاری" titleLink="/" />
+          <HeaderTitle title="فضای همکاری" titleLink="/FastTrackPlan" />
           <div className="mb-14">
             <ListForm
               title={CollaborationSpaceTables[0].Title}

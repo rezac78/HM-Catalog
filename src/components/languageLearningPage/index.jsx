@@ -31,7 +31,7 @@ function languageLearningPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around py-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
             {languageLearningMainCard.map((e) => (
               <CardMain
                 key={e.id}

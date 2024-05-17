@@ -9,7 +9,7 @@ function CompleteAcademicDocumentPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="تکمیل مدارک دانشگاهی" titleLink="/" />
+          <HeaderTitle title="تکمیل مدارک دانشگاهی" titleLink="/metacode" />
           {CompleteAcademicDocumentsMain.map((e) => (
             <HomeContentPage
               key={e.id}

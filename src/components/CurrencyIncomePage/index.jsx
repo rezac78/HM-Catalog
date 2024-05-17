@@ -9,7 +9,7 @@ function CurrencyIncomePage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="کسب درآمد ارزی" titleLink="/" />
+          <HeaderTitle title="کسب درآمد ارزی" titleLink="/metacode" />
           {CurrencyIncomeMain.map((e) => (
             <HomeContentPage
               key={e.id}

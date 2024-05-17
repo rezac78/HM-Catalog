@@ -14,7 +14,7 @@ function BaProfessionalPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="BA تخصصی" titleLink="/" />
+          <HeaderTitle title="BA تخصصی" titleLink="/BA" />
           {baProfessionalMain.map((e) => (
             <HomeContentPage
               key={e.id}

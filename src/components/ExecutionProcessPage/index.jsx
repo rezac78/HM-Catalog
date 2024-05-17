@@ -9,7 +9,7 @@ function ExecutionProcessPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="فرآیند اجرایی (اینفوگرافی)" titleLink="/" />
+          <HeaderTitle title="فرآیند اجرایی (اینفوگرافی)" titleLink="/FastTrackPlan" />
           <div className="my-6">
             <ListForm
               title={ExecutionProcessTables[0].Title}

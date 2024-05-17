@@ -10,7 +10,7 @@ function BootcampPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="بوت کمپ و اشتغال" titleLink="/" />
+          <HeaderTitle title="بوت کمپ و اشتغال" titleLink="/metacode" />
           <div className="mb-6">
             <ListForm
               title={bootcampTables[0].Title}

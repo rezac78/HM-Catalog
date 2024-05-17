@@ -23,14 +23,14 @@ function UniversityPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="my-6">
+          <div className="mb-6">
             <ListForm
               title={universityTable[0].Title}
               Data={universityTable[0].linkList}
               type="listNumber"
             />
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pb-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
             {universityMainCard.map((e) => (
               <CardMain
                 key={e.id}

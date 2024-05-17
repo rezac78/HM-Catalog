@@ -10,7 +10,7 @@ function BaPlusPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="BA پلاس" titleLink="/" />
+          <HeaderTitle title="BA پلاس" titleLink="/BA" />
           {baPlusMain.map((e) => (
             <HomeContentPage
               key={e.id}
