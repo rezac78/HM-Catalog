@@ -6,7 +6,7 @@ function Header({ type, links }) {
   return (
     <>
       <header
-        className={`fixed flex md:static top-0 w-full z-30 h-[240px] md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
+        className={`flex w-full z-30 min-h-[240px] h-[240px] md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
       >
         <Link to={'/'} className="pt-4 flex justify-start">
           <img

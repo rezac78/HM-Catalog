@@ -12,7 +12,7 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
-    overflow-y: auto;
+    
     -webkit-overflow-scrolling: touch;
 }
 code {
@@ -30,10 +30,10 @@ code {
     color: black;
 }
 
-@media not all and (min-resolution:.001dpcm) { 
+/* @media not all and (min-resolution:.001dpcm) { 
     @supports (-webkit-appearance:none) {
         .Safari-specific-style {
             padding-bottom: "90px";
         }
     }
-  }
+  } */

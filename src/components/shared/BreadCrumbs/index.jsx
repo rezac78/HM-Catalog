@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const BreadCrumbs = ({ links = [], isScrolled }) => {
   return links.length === 0 ? null : (
     <ul
-      className={`bg-[#FFFFFF] fixed flex md:static top-0 w-full  justify-start text-[#6E6E6E] text-[12px] md:pt-5 pr-3 md:pr-10 mt-[100px]  md:my-0 z-30`}
+      className={`bg-[#FFFFFF] fixed flex md:static top-[110px] w-full  justify-start text-[#6E6E6E] text-[12px] md:pt-5 pr-3 md:pr-10   md:my-0 z-30`}
     >
       <Link to={'/'}>
         <li className={"h-8 flex items-center justify-center"} key={-1}>
