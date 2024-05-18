@@ -12,7 +12,7 @@ body {
 .wrapper {
     height: 100vh;
     width: 100vw;
-    overflow: auto;
+    overflow-y: auto;
     -webkit-overflow-scrolling: touch;
 }
 code {
@@ -29,3 +29,11 @@ code {
     top: 5;
     color: black; /* Change color if needed */
 }
+
+@media not all and (min-resolution:.001dpcm) { 
+    @supports (-webkit-appearance:none) {
+        .Safari-specific-style {
+            padding-bottom: "50px";
+        }
+    }
+  }
