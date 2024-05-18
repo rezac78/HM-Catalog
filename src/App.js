@@ -103,6 +103,7 @@ function App() {
   const isScrolled = useScrollBeyond(1);
   const isWide = useWidthExceeds(768);
   return (
+    <div  className="wrapper">
     <Router>
       <Routes>
         {path.map((e) => {
@@ -127,6 +128,7 @@ function App() {
         })}
       </Routes>
     </Router>
+    </div>
   );
 }
 
