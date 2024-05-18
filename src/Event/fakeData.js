@@ -664,9 +664,10 @@ export const ContactUsMain = [
 export const ContactUsMain2 = [
   {
     id: 1,
-    title:"لینک آدرس :",
+    title: "لینک آدرس :",
     linkAddress: "zaya.io/Hamrahanoffice",
-    HrefAddress: "https://neshan.org/maps/@35.759577,51.446098,15z,0p/places/_bv2x4pxuWXu",
+    HrefAddress:
+      "https://neshan.org/maps/@35.759577,51.446098,15z,0p/places/_bv2x4pxuWXu",
   },
 ];
 export const DoctorateLanguageMain = [
@@ -1180,6 +1181,12 @@ export const baPlusTables = [
         id: 9,
         item: "تیم سازی",
       },
+      {
+        id: 10,
+        title: "لینک آدرس :",
+        HrefAddress: "https://tatpnu.com/services/baLearnCourses",
+        linkAddress: "برای مشاهده دوره های مختلف BA پلاس روی لینک کلیلک کنید",
+      },
     ],
   },
 ];
@@ -1194,7 +1201,9 @@ export const ContactUsTables = [
       },
       {
         id: 2,
-        item: "شماره تماس :۰۲۱۹۱۰۹۷۷۳۳",
+        title: "شماره تماس :",
+        linkAddress: "۰۲۱۹۱۰۹۷۷۳۳",
+        HrefAddress: "+02191097733",
       },
     ],
   },
@@ -1745,7 +1754,9 @@ export const ConsultationMainTable2 = [
       },
       {
         id: 2,
-        item: "شماره تماس : ۰۲۱۹۱۰۹۷۷۳۳",
+        title: "شماره تماس :",
+        linkAddress: "۰۲۱۹۱۰۹۷۷۳۳",
+        HrefAddress: "+02191097733",
       },
     ],
   },

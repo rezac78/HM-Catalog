@@ -31,14 +31,14 @@ function ContactUsPage({ isScrolled, isWide }) {
               title={e.title}
               linkAddress={e.linkAddress}
               HrefAddress={e.HrefAddress}
-              type={false}
+              type=""
             />
           ))}
           <div className="mb-12">
             <ListForm
               title={ContactUsTables[0].Title}
               Data={ContactUsTables[0].linkList}
-              type=""
+              type="listLink"
             />
           </div>
           <div className="mb-12">
@@ -72,14 +72,14 @@ function ContactUsPage({ isScrolled, isWide }) {
               title={e.title}
               linkAddress={e.linkAddress}
               HrefAddress={e.HrefAddress}
-              type={false}
+              type=''
             />
           ))}
           <div className="my-6">
             <ListForm
               title={ContactUsTables[0].Title}
               Data={ContactUsTables[0].linkList}
-              type=""
+              type="listLink"
             />
           </div>
           <div className="my-6">

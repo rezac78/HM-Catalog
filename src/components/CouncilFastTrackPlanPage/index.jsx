@@ -29,7 +29,7 @@ function CouncilFastTrackPlanPage({ isScrolled, isWide }) {
             <ListForm
               title={ConsultationMainTable2[0].Title}
               Data={ConsultationMainTable2[0].linkList}
-              type=""
+              type="listLink"
             />
           </div>
         </>
@@ -61,7 +61,7 @@ function CouncilFastTrackPlanPage({ isScrolled, isWide }) {
             <ListForm
               title={ConsultationMainTable2[0].Title}
               Data={ConsultationMainTable2[0].linkList}
-              type=""
+              type="listLink"
             />
           </div>
         </div>
