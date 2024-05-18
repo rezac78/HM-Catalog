@@ -428,6 +428,12 @@ export const path = [
       { id: 3, item: "مشاوره تخصصی", link: "/council" },
     ],
   },
+  {
+    id: 44,
+    path: "/wayOfSuccess",
+    component: "wayOfSuccess",
+    linkList: [{ id: 1, item: "مسیر موفقیت", link: "/wayOfSuccess" }],
+  },
 ];
 
 export const homeMain = [
@@ -575,6 +581,13 @@ export const seniorMain = [
     id: 1,
     content:
       "تحصیل در مقطع کارشناسی به عنوان گام اول در مسیر پیشرفت فردی و شغلی شناخته می شود. برنامه های طراحی شده برای متقاضیان این مقطع تحصیلی در همراهان برای ارتقای مدرک تحصیلی افراد دارای دیپلم یا کاردانی به سطح کارشناسی (لیسانس) به صورتی است که تمام محدودیت ها و شرایط افراد شاغل جهت تحصیل در این مقطع مدنظر قرار گرفته است.",
+  },
+];
+export const WayOfSuccessMain = [
+  {
+    id: 1,
+    content:
+      "برای درک ساده و سریع تفاوت ها و تمایز های برنامه های موسسه همراهان اینفوگرافی زیر تقدیم حضور میگردد.",
   },
 ];
 export const baPlusMain = [
@@ -811,6 +824,12 @@ export const homeMainCard = [
     image: "/images/contact.png",
     link: "/Contactus",
   },
+  {
+    id: 7,
+    Title: "مسیر موفقیت",
+    image: "/images/WayOfSuccess.svg",
+    link: "/wayOfSuccess",
+  },
 ];
 export const homeDeskTopMainCard = [
   {
@@ -854,6 +873,12 @@ export const homeDeskTopMainCard = [
     image: "/images/contact.png",
     imageBack: "/images/brushed.png",
     link: "/Contactus",
+  },
+  {
+    id: 7,
+    Title: "مسیر موفقیت",
+    image: "/images/WayOfSuccess.svg",
+    link: "/wayOfSuccess",
   },
 ];
 export const designMainCard = [
@@ -945,6 +970,12 @@ export const baMainCard = [
     image: "",
     link: "/professionalConsultationBa",
   },
+  {
+    id: 4,
+    Title: "مسیر موفقیت",
+    image: "",
+    link: "/wayOfSuccess",
+  },
 ];
 export const ParticipationCard = [
   {
@@ -1010,6 +1041,12 @@ export const universityMainCard = [
     Title: "مشاوره تخصصی",
     image: "",
     link: "/professionalConsultation",
+  },
+  {
+    id: 6,
+    Title: "مسیر موفقیت",
+    image: "",
+    link: "/wayOfSuccess",
   },
 ];
 export const metaTagMainCard = [

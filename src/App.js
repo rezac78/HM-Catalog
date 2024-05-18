@@ -41,6 +41,7 @@ import ContactUsPage from "./components/ContactUsPage";
 import ParticipationPage from "./components/ParticipationPage";
 import PartnershipPage from "./components/PartnershipPage";
 import InternationalPage from "./components/InternationalPage";
+import WayOfSuccessPage from "./components/WayOfSuccessPage";
 import FagPage from "./components/FagPage";
 import CurrencyIncomePage from "./components/CurrencyIncomePage";
 import CompleteAcademicDocumentPage from "./components/CompleteAcademicDocumentPage";
@@ -98,6 +99,7 @@ const componentMapping = {
   Participation: ParticipationPage,
   Partnership: PartnershipPage,
   International: InternationalPage,
+  wayOfSuccess: WayOfSuccessPage,
 };
 function App() {
   const isScrolled = useScrollBeyond(1);
