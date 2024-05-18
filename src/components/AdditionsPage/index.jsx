@@ -24,12 +24,11 @@ function AdditionsPage({ isScrolled, isWide }) {
         </>
       ) : (
         <div>
-          <div className="flex justify-start">
-            <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+           <div className="max-w-[1300px] flex justify-center mt-10">
+           <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
-          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="ارزش افزوده‌های ما" titleLink="/" />
-          <div className="my-6">
+          <div className="flex justify-between mt-10 w-full border-t-2 border-[#54A0DC]"> </div>
+          <div className="max-w-[1300px] m-auto my-10">
             <ListForm
               title={seniorTable[0].Title}
               Data={seniorTable[0].linkList}

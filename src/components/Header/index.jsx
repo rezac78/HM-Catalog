@@ -5,9 +5,8 @@ import { Link } from "react-router-dom";
 function Header({ type, links }) {
   return (
     <>
-    
       <header
-        className={`flex flex-col w-full z-30 min-h-[210px]  md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
+        className={`flex flex-col w-full z-30 min-h-[210px]  md:min-h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
       >
 <div className="flex w-full">
         <Link to={'/'} className="pt-4 flex justify-start">

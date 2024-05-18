@@ -111,7 +111,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-5 md:mt-20">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
             {MastersGraduatesButton.map((e) => (
               <Button
                 type="card"
@@ -130,7 +130,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-5 md:mt-20">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
             {MastersGraduatesButton.map((e) => (
               <Button
                 type="card"
@@ -149,7 +149,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-5 md:mt-20">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
             {MastersGraduatesButton.map((e) => (
               <Button
                 type="card"
