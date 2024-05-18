@@ -19,7 +19,7 @@ function DesignPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className=" grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around ">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around ">
             {designMainCard.map((e) => (
               <CardMain
               key={e.id}
