@@ -6,7 +6,7 @@ function LinkShare({ linkAddress, title, HrefAddress, type }) {
       } flex px-0  sm:py-6 md:p-0 w-full font-bold text-[#4F4F4F]`}
     >
       <h2
-        className={`${type === "listLink" ? "" : "text-[16px] md:text-[18px]"}`}
+        className={`${type === "listLink" ? "" : "text-[14px] md:text-[18px]"}`}
       >
         {title}
       </h2>

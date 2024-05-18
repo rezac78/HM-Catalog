@@ -1181,13 +1181,15 @@ export const baPlusTables = [
         id: 9,
         item: "تیم سازی",
       },
-      {
-        id: 10,
-        title: "لینک آدرس :",
-        HrefAddress: "https://tatpnu.com/services/baLearnCourses",
-        linkAddress: "برای مشاهده دوره های مختلف BA پلاس روی لینک کلیلک کنید",
-      },
     ],
+  },
+];
+export const baPlusLink = [
+  {
+    id: 1,
+    title: "لینک آدرس :",
+    HrefAddress: "https://tatpnu.com/services/baLearnCourses",
+    linkAddress: "مشاهده دوره های BA پلاس",
   },
 ];
 export const ContactUsTables = [

@@ -1,9 +1,10 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { baPlusMain, baPlusTables } from "../../Event/fakeData";
+import { baPlusMain, baPlusTables, baPlusLink } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
+import LinkShare from "../shared/LinkShare";
 
 function BaPlusPage({ isScrolled, isWide }) {
   return (
@@ -26,6 +27,15 @@ function BaPlusPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
+          {baPlusLink.map((e) => (
+            <LinkShare
+              key={e.id}
+              title={e.title}
+              linkAddress={e.linkAddress}
+              HrefAddress={e.HrefAddress}
+              type=""
+            />
+          ))}
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -51,6 +61,15 @@ function BaPlusPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
+          {baPlusLink.map((e) => (
+            <LinkShare
+              key={e.id}
+              title={e.title}
+              linkAddress={e.linkAddress}
+              HrefAddress={e.HrefAddress}
+              type=""
+            />
+          ))}
         </div>
       )}
     </HeaderScroll>
