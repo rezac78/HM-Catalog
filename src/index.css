@@ -7,8 +7,13 @@ body {
     margin: 0;
     font-family: 'Yekan Bakh', serif ;
     background: white;
+    overflow: hidden;
 }
-
+.wrapper {
+    height: 100vh;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
         monospace;
