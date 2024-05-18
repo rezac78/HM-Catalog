@@ -5,9 +5,11 @@ import { Link } from "react-router-dom";
 function Header({ type, links }) {
   return (
     <>
+    
       <header
-        className={`flex w-full z-30 min-h-[240px] h-[240px] md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
+        className={`flex flex-col w-full z-30 min-h-[210px]  md:h-[112px] bg-gradient-to-t from-[#1E73BF] to-[#57A2DE] rounded-b-lg md:rounded-none`}
       >
+<div className="flex w-full">
         <Link to={'/'} className="pt-4 flex justify-start">
           <img
             src="/images/hat.png"
@@ -19,8 +21,10 @@ function Header({ type, links }) {
           <span className="text-white font-bold">همراهان</span>
           <span className="text-[#F5F5F5]">فردایی روشن</span>
         </div>
+        </div>
+        <BreadCrumbs links={links} />
       </header>
-      <BreadCrumbs links={links} />
+      
     </>
   );
 }
