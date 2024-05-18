@@ -1,10 +1,10 @@
 function HomeContentPage({ content, title, type }) {
   return (
-    <div className="flex flex-col justify-center text-right px-0 py-4 md:p-0 w-full">
-      <h2 className="text-[16px] md:text-[25px] font-bold text-[#4F4F4F] mb-2">
+    <div className="flex flex-col justify-center px-0 py-6 md:p-0 w-full font-bold text-[#4F4F4F]">
+      <h2 className="text-[16px] md:text-[25px]  ">
         {type && title}
       </h2>
-      <span className="text-[14px] md:text-[18px] font-bold text-[#4F4F4F]">
+      <span className="text-[14px] md:text-[18px] ">
         {content}
       </span>
     </div>
