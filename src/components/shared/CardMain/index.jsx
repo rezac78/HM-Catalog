@@ -5,7 +5,7 @@ function CardMain({ Title, Image, link, type }) {
     <Link
       to={link}
       className={`bg-[#387AB4] rounded-lg ${
-        type ? "pt-2 sm:w-28 sm:h-28 aspect-square" : "pt-1 sm:w-[150px] sm:h-[64px] md:w-[270px] md:h-[90px] aspect-[6/3]"
+        type ? "pt-2 w-28 h-28" : "pt-1 w-[150px] h-[64px] md:w-[270px] md:h-[90px]"
       }`}
     >
       {type && (
