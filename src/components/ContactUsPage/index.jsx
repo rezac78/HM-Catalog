@@ -1,9 +1,15 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { ContactUsMain, ContactUsMain2, ContactUsTables, ContactUsTables2 } from "../../Event/fakeData";
+import {
+  ContactUsMain,
+  ContactUsMain2,
+  ContactUsTables,
+  ContactUsTables2,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
 import ListForm from "../shared/ListForm";
+import LinkShare from "../shared/LinkShare";
 
 function ContactUsPage({ isScrolled, isWide }) {
   return (
@@ -20,10 +26,11 @@ function ContactUsPage({ isScrolled, isWide }) {
             />
           ))}
           {ContactUsMain2.map((e) => (
-            <HomeContentPage
+            <LinkShare
               key={e.id}
-              title={e.Title}
-              content={e.content}
+              title={e.title}
+              linkAddress={e.linkAddress}
+              HrefAddress={e.HrefAddress}
               type={false}
             />
           ))}
@@ -42,7 +49,6 @@ function ContactUsPage({ isScrolled, isWide }) {
             />
           </div>
         </>
-
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
           <div className="flex justify-start mt-10">
@@ -61,10 +67,11 @@ function ContactUsPage({ isScrolled, isWide }) {
             ))}
           </div>
           {ContactUsMain2.map((e) => (
-            <HomeContentPage
+            <LinkShare
               key={e.id}
-              title={e.Title}
-              content={e.content}
+              title={e.title}
+              linkAddress={e.linkAddress}
+              HrefAddress={e.HrefAddress}
               type={false}
             />
           ))}

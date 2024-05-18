@@ -24,7 +24,7 @@ function CompleteAcademicDocumentPage({ isScrolled, isWide }) {
           <div className="flex justify-start mt-10">
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
-          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
+          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle title="تکمیل مدارک دانشگاهی" titleLink="/" />
           <div className="mx-auto my-10">
             {CompleteAcademicDocumentsMain.map((e) => (

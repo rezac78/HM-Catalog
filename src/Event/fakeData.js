@@ -114,7 +114,7 @@ export const path = [
     linkList: [
       { id: 1, item: "طرح ها", link: "/design" },
       { id: 2, item: "دانشگاهی", link: "/university" },
-      { id: 3, item: "دکتری", link: "/PHD" },
+      { id: 3, item: "دکتری", link: "/phd" },
     ],
   },
   {
@@ -664,7 +664,9 @@ export const ContactUsMain = [
 export const ContactUsMain2 = [
   {
     id: 1,
-    content: "لینک آدرس: zaya.io/Hamrahanoffice",
+    title:"لینک آدرس :",
+    linkAddress: "zaya.io/Hamrahanoffice",
+    HrefAddress: "https://neshan.org/maps/@35.759577,51.446098,15z,0p/places/_bv2x4pxuWXu",
   },
 ];
 export const DoctorateLanguageMain = [
@@ -994,7 +996,7 @@ export const universityMainCard = [
     id: 3,
     Title: "دکتری",
     image: "",
-    link: "/PHD",
+    link: "/phd",
   },
   {
     id: 4,
@@ -1921,7 +1923,7 @@ export const consentTable = [
 export const gloryButton = [
   {
     id: 1,
-    Title: "دست آورد ها",
+    Title: "دستاوردها",
     img: "/icon/award.svg",
     href: "/achievements",
   },

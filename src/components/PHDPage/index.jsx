@@ -4,9 +4,9 @@ import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
-function PhdPage({ isScrolled, isWide }) {
+function PhdPage({ isWide }) {
   return (
-    <HeaderScroll isScrolled={isScrolled}>
+    <HeaderScroll>
       {!isWide ? (
         <>
           <HeaderTitle title="دکتری" titleLink="/university" />
@@ -39,7 +39,7 @@ function PhdPage({ isScrolled, isWide }) {
           <div className="flex justify-start mt-10">
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
-          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
+          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle title="دکتری" titleLink="/" />
           <div className="mx-auto my-10">
             {PhdMain.map((e) => (
@@ -50,15 +50,15 @@ function PhdPage({ isScrolled, isWide }) {
                 type={false}
               />
             ))}
-            {PhdMain2.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
           </div>
+          {PhdMain2.map((e) => (
+            <HomeContentPage
+              key={e.id}
+              title={e.Title}
+              content={e.content}
+              type={false}
+            />
+          ))}
           <div className="my-6">
             <ListForm
               title={PhdMainTable[0].Title}

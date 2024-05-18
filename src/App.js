@@ -117,7 +117,7 @@ function App() {
                   <Header
                     links={e.linkList}
                     type="mobile"
-                    isScrolled={isScrolled}
+                    isWide={isWide}
                   />
                   <Component isWide={isWide} isScrolled={isScrolled} />
                   <Footer />
