@@ -23,17 +23,17 @@ code {
     scrollbar-width: none;
 }
 .dotted-list li::before {
-    content: '•'; /* Unicode for a dot */
+    content: '•';
     position: absolute;
     right: 0;
     top: 5;
-    color: black; /* Change color if needed */
+    color: black;
 }
 
 @media not all and (min-resolution:.001dpcm) { 
     @supports (-webkit-appearance:none) {
         .Safari-specific-style {
-            padding-bottom: "50px";
+            padding-bottom: "90px";
         }
     }
   }
