@@ -115,11 +115,10 @@ function App() {
               key={e.id}
               path={e.path}
               element={
-                <div className="flex flex-col relative h-screen">
+                <div className="relative flex flex-col h-screen">
                   <Header
                     links={e.linkList}
                     type="mobile"
-                    isWide={isWide}
                   />
                   <Component isWide={isWide} isScrolled={isScrolled} />
                   <Footer />

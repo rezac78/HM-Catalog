@@ -824,12 +824,7 @@ export const homeMainCard = [
     image: "/images/contact.png",
     link: "/Contactus",
   },
-  {
-    id: 7,
-    Title: "مسیر موفقیت",
-    image: "/images/WayOfSuccess.svg",
-    link: "/wayOfSuccess",
-  },
+
 ];
 export const homeDeskTopMainCard = [
   {
@@ -874,12 +869,7 @@ export const homeDeskTopMainCard = [
     imageBack: "/images/brushed.png",
     link: "/Contactus",
   },
-  {
-    id: 7,
-    Title: "مسیر موفقیت",
-    image: "/images/WayOfSuccess.svg",
-    link: "/wayOfSuccess",
-  },
+
 ];
 export const designMainCard = [
   {

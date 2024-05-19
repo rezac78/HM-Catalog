@@ -59,8 +59,8 @@ function HomePage({ isScrolled, isWide }) {
             </div>
           </div>
           <div className="grid grid-cols-7 self-center gap-3 mt-10 bg-[#1E73BF] rounded-md py-6">
-            {homeDeskTopMainCard.map((e) => (
-              <CardDeskTop image={e.image} imageBack={e.imageBack} link={e.link} Title={e.Title} />
+            {homeDeskTopMainCard.map((e,i) => (
+              <CardDeskTop key={i} image={e.image} imageBack={e.imageBack} link={e.link} Title={e.Title} />
             ))}
           </div>
         </>
