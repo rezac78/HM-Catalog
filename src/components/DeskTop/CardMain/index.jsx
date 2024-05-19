@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 function CardDeskTop({ link, image, imageBack, Title }) {
   return (
-    <Link to={link} className={`rounded-lg pt-1 w-[110px] flex flex-col items-center`}>
-      <div className='relative w-[60px] h-[60px]'>
+    <Link to={link} className={`bg-[#1E73BF]  rounded-lg pt-6 w-[150px] h-[140px] flex flex-col items-center`}>
+      <div className='relative w-[65px] h-[65px]'>
       <img
         alt="notfound"
         src={imageBack}
