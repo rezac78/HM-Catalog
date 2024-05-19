@@ -48,7 +48,7 @@ function HomePage({ isScrolled }) {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex justify-center my-auto p-5 gap-3">
+        <div className="hidden md:flex justify-center my-auto p-10 gap-3">
           {homeDeskTopMainCard.map((e, i) => (
             <CardDeskTop
               key={i}
@@ -59,11 +59,11 @@ function HomePage({ isScrolled }) {
             />
           ))}
         </div>
-        {/* <div>
-          <div className="bg-[#387AB4] w-10 h-10"></div>
-          <div className="bg-[#387AB4] w-10 h-10"></div>
-          <div className="bg-[#387AB4] w-10 h-10"></div>
-        </div> */}
+        <div className="hidden md:flex relative">
+          <div className="absolute bottom-0 bg-[#387AB4] w-[20px] h-[350px] rounded-tl-lg"></div>
+          <div className="absolute bottom-0 bg-[#387AB4] w-[100%] h-[30px]"></div>
+          <div className="bg-[#387AB4] absolute left-0 bottom-0 rounded-tr-lg w-[20px] h-[120px]"></div>
+        </div>
       </>
     </HeaderScroll>
   );
