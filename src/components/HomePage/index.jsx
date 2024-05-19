@@ -36,7 +36,7 @@ function HomePage({ isScrolled }) {
           <div className="-mt-[5px]">
             <img alt="notFound" src="/images/homeLogo.svg" />
             <div className="flex w-6/12 my-5">
-              <div className="h-20 w-2 ml-5 bg-[#387AB4]"></div>
+              <div className="h-24 w-1 ml-3 bg-[#387AB4]"></div>
               {homeMain.map((e) => (
                 <HomeContentPage
                   key={e.id}
