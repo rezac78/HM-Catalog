@@ -48,7 +48,7 @@ function HomePage({ isScrolled }) {
             </div>
           </div>
         </div>
-        <div className="hidden md:flex justify-center my-auto p-10 gap-3">
+        <div className="hidden md:flex justify-center my-auto pl-3 pr-12 py-12 gap-3">
           {homeDeskTopMainCard.map((e, i) => (
             <CardDeskTop
               key={i}
@@ -59,10 +59,14 @@ function HomePage({ isScrolled }) {
             />
           ))}
         </div>
+        <div className="hidden md:flex relative py-10">
+          <div className="absolute bottom-16 bg-[#828282] w-[100%] h-[2px] rounded-tl-[2.5rem]"></div>
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-14 bg-white z-10 px-10 text-[#828282] text-[18px] font-bold">تجربه بی‌نظیر از خدمات با کیفیت</div>
+        </div>
         <div className="hidden md:flex relative">
-          <div className="absolute bottom-0 bg-[#387AB4] w-[20px] h-[350px] rounded-tl-lg"></div>
+          <div className="absolute bottom-0 bg-[#387AB4] w-[40px] h-[350px] rounded-tl-[2.5rem]"></div>
           <div className="absolute bottom-0 bg-[#387AB4] w-[100%] h-[30px]"></div>
-          <div className="bg-[#387AB4] absolute left-0 bottom-0 rounded-tr-lg w-[20px] h-[120px]"></div>
+          <div className="bg-[#387AB4] absolute left-0 bottom-0 rounded-tr-[3rem] w-[60px] h-[100px]"></div>
         </div>
       </>
     </HeaderScroll>

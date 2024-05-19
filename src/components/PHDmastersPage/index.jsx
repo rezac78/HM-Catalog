@@ -51,7 +51,7 @@ function PHDmastersPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="ارشد و دکتری ویژه" titleLink="/" />
+          <HeaderTitle title="ارشد و دکتری ویژه" titleLink="/university" />
           <div className="mx-auto my-10">
             {PHDmastersMain.map((e) => (
               <HomeContentPage

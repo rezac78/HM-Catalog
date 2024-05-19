@@ -67,7 +67,7 @@ function MetacodePage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="متاکد" titleLink="/" />
+          <HeaderTitle title="متاکد" titleLink="/design" />
           <div className="mx-auto my-10">
             {metacodeMain.map((e) => (
               <HomeContentPage
@@ -103,7 +103,7 @@ function MetacodePage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around py-10">
+          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-center py-10">
             {metaTagMainCard.map((e) => (
               <CardMain
                 key={e.id}

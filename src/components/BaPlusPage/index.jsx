@@ -43,7 +43,7 @@ function BaPlusPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="BA پلاس" titleLink="/" />
+          <HeaderTitle title="BA پلاس" titleLink="/BA" />
           <div className="mx-auto my-10">
             {baPlusMain.map((e) => (
               <HomeContentPage

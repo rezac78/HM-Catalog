@@ -24,7 +24,7 @@ function CollaborationSpacePage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="فضای همکاری" titleLink="/" />
+          <HeaderTitle title="فضای همکاری" titleLink="/FastTrackPlan" />
           <div className="my-6">
             <ListForm
               title={CollaborationSpaceTables[0].Title}

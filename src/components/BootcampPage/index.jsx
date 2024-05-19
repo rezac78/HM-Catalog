@@ -35,7 +35,7 @@ function BootcampPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="بوت کمپ و اشتغال" titleLink="/" />
+          <HeaderTitle title="بوت کمپ و اشتغال" titleLink="/metacode" />
           <div className="my-6">
             <ListForm
               title={bootcampTables[0].Title}

@@ -30,7 +30,7 @@ function OrganizationalLanguageBAPage({ isScrolled, isWide }) {
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle
             title="دوره های زبان تخصصی مدیریت کسب و کار (BA)"
-            titleLink="/"
+            titleLink="/languageLearning"
           />
           <div className="mx-auto my-10">
             {OrganizationalLanguageBAMain.map((e) => (

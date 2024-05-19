@@ -3,7 +3,6 @@ import { sstudentMain } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
-import TableForm from "../shared/TableForm";
 
 function StudentsPage({ isScrolled, isWide }) {
         return (
@@ -19,9 +18,9 @@ function StudentsPage({ isScrolled, isWide }) {
                                                         type={false}
                                                 />
                                         ))}
-                                        <div className="mb-14">
+                                        {/* <div className="mb-14">
                                                 <TableForm />
-                                        </div>
+                                        </div> */}
                                 </>
                         ) : (
                                 <div className="max-w-[1300px] mx-auto px-20">
@@ -40,9 +39,9 @@ function StudentsPage({ isScrolled, isWide }) {
                                                         />
                                                 ))}
                                         </div>
-                                        <div className="my-10">
+                                        {/* <div className="my-10">
                                                 <TableForm />
-                                        </div>
+                                        </div> */}
                                 </div>
                         )}
                 </HeaderScroll>

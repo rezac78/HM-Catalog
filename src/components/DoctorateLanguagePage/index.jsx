@@ -30,7 +30,7 @@ function IDoctorateLanguagePage({ isScrolled, isWide }) {
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle
             title="دوره تخصصی آزمون های زبان جامع دکتری"
-            titleLink="/"
+            titleLink="/languageLearning"
           />
           <div className="mx-auto my-10">
             {DoctorateLanguageMain.map((e) => (

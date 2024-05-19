@@ -33,7 +33,10 @@ function AchievementsPage({ isScrolled, isWide }) {
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
           {isWide && (
-            <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+            <>
+              <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+              <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
+            </>
           )}
           <div className="mb-10">
             <HeaderTitle title="دستاوردها" titleLink="/glory" />

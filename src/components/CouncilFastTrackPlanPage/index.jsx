@@ -39,7 +39,7 @@ function CouncilFastTrackPlanPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="مشاوره تخصصی" titleLink="/" />
+          <HeaderTitle title="مشاوره تخصصی" titleLink="/FastTrackPlan" />
           <div className="mx-auto my-10">
             {ConsultationMain.map((e) => (
               <HomeContentPage

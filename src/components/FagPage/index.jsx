@@ -24,7 +24,7 @@ function FagPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="سوالات متداول" titleLink="/" />
+          <HeaderTitle title="سوالات متداول" titleLink="/design" />
           <div className="mb-14">
             <ListForm
               title={fagTables[0].Title}

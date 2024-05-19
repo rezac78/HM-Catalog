@@ -40,7 +40,7 @@ function PhdPage({ isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="دکتری" titleLink="/" />
+          <HeaderTitle title="دکتری" titleLink="/university" />
           <div className="mx-auto my-10">
             {PhdMain.map((e) => (
               <HomeContentPage

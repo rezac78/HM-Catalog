@@ -42,7 +42,7 @@ export const path = [
     id: 6,
     path: "/additions",
     component: "additions",
-    linkList: [{ id: 1, item: "ارزش افزوده های ما", link: "/additions" }],
+    linkList: [{ id: 1, item: "ارزش های پیشنهادی", link: "/additions" }],
   },
   {
     id: 7,
@@ -628,8 +628,7 @@ export const PartnershipMain2 = [
 export const sstudentMain = [
   {
     id: 1,
-    content:
-      "جدول زیر با افتخار لیست دانشجویان عزیزی است که در مسیر ادامه تحصیل با ما همراه شده­ اند :",
+    content:"ما در همراهان افتخار این را داشته ایم که بیش از 2500 دانشجو را در مقاطع مختلف دانشگاهی از شروع تا فارغ التحصیلی همراهی کنیم .",
   },
 ];
 export const bootcampMain = [

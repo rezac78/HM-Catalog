@@ -9,7 +9,7 @@ function AdditionsPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="ارزش افزوده‌های ما" titleLink="/" />
+          <HeaderTitle title="ارزش های پیشنهادی" titleLink="/" />
           <div className="mb-14">
             <ListForm
               title={seniorTable[0].Title}
@@ -23,11 +23,12 @@ function AdditionsPage({ isScrolled, isWide }) {
           </div>
         </>
       ) : (
-        <div>
-           <div className="max-w-[1300px] flex justify-center mt-10">
-           <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
+        <div className="max-w-[1300px] mx-auto px-20">
+          <div className="flex justify-start mt-10">
+            <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
-          <div className="flex justify-between mt-10 w-full border-t-2 border-[#54A0DC]"> </div>
+          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
+          <HeaderTitle title="ارزش های پیشنهادی" titleLink="/" />
           <div className="max-w-[1300px] m-auto my-10">
             <ListForm
               title={seniorTable[0].Title}

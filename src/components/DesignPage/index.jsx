@@ -4,7 +4,6 @@ import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HomeContentPage from "../shared/HomeContentPage";
 import HeaderScroll from "../shared/HeaderScroll";
-
 function DesignPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
