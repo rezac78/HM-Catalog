@@ -144,31 +144,30 @@ function App() {
     <div className="wrapper">
       <Router>
         <Suspense fallback={<Loading />}>
-          {loading ? (
-            <Loading />
-          ) : (
-            <Routes>
-              {path.map((e) => {
-                const Component = componentMapping[e.component];
-                return (
-                  <Route
-                    key={e.id}
-                    path={e.path}
-                    element={
-                      <div
-                        key={e.id}
-                        className="relative flex flex-col h-screen"
-                      >
-                        <Header links={e.linkList} type="mobile" />
-                        <Component isWide={isWide} isScrolled={isScrolled} />
-                        <Footer />
-                      </div>
-                    }
-                  />
-                );
-              })}
-            </Routes>
-          )}
+          <Routes>
+            {path.map((e) => {
+              const Component = componentMapping[e.component];
+              return (
+                <Route
+                  key={e.id}
+                  path={e.path}
+                  element={
+                    <div key={e.id} className="relative flex flex-col h-screen">
+                      {loading ? (
+                        <Loading />
+                      ) : (
+                        <>
+                          <Header links={e.linkList} type="mobile" />
+                          <Component isWide={isWide} isScrolled={isScrolled} />
+                          <Footer />
+                        </>
+                      )}
+                    </div>
+                  }
+                />
+              );
+            })}
+          </Routes>
         </Suspense>
       </Router>
     </div>
