@@ -137,32 +137,38 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 30000);
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
   return (
     <div className="wrapper">
       <Router>
         <Suspense fallback={<Loading />}>
-          {loading && <Loading />}
-          <Routes>
-            {path.map((e) => {
-              const Component = componentMapping[e.component];
-              return (
-                <Route
-                  key={e.id}
-                  path={e.path}
-                  element={
-                    <div key={e.id} className="relative flex flex-col h-screen">
-                      <Header links={e.linkList} type="mobile" />
-                      <Component isWide={isWide} isScrolled={isScrolled} />
-                      <Footer />
-                    </div>
-                  }
-                />
-              );
-            })}
-          </Routes>
+          {loading ? (
+            <Loading />
+          ) : (
+            <Routes>
+              {path.map((e) => {
+                const Component = componentMapping[e.component];
+                return (
+                  <Route
+                    key={e.id}
+                    path={e.path}
+                    element={
+                      <div
+                        key={e.id}
+                        className="relative flex flex-col h-screen"
+                      >
+                        <Header links={e.linkList} type="mobile" />
+                        <Component isWide={isWide} isScrolled={isScrolled} />
+                        <Footer />
+                      </div>
+                    }
+                  />
+                );
+              })}
+            </Routes>
+          )}
         </Suspense>
       </Router>
     </div>
