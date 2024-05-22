@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
+
 const BreadCrumbs = ({ links = [], isScrolled }) => {
-  return links.length === 0 ? null : (
+  if (links.length === 0) return null;
+
+  return (
     <ul
       className={`bg-[#FFFFFF] flex w-full justify-start text-[#6E6E6E] text-[12px] mt-2 md:pt-5 pr-3 md:pr-10 md:my-0 z-30`}
     >
-      <Link to={'/'}>
-        <li className={"h-8 flex items-center justify-center"} key={-1}>
+      <li className={"h-8 flex items-center justify-center"} key={-1}>
+        <Link to={"/"} className="flex items-center">
           <svg
             width="17"
             height="17"
@@ -29,17 +32,17 @@ const BreadCrumbs = ({ links = [], isScrolled }) => {
             />
           </svg>
           <span className={"mx-1.5"}>{`>`}</span>
-        </li>
-      </Link>
+        </Link>
+      </li>
       {links.map((e, index) => (
-        <Link to={e.link}>
-          <li className={"h-8 flex items-center justify-center"} key={index}>
+        <li className={"h-8 flex items-center justify-center"} key={e.link}>
+          <Link to={e.link} className="flex items-center">
             <span>{e.item}</span>
             {index !== links.length - 1 && (
               <span className={"mx-1.5"}>{`>`}</span>
             )}
-          </li>
-        </Link>
+          </Link>
+        </li>
       ))}
     </ul>
   );

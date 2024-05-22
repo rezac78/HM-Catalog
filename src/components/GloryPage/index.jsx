@@ -27,7 +27,7 @@ function GloryPage({ isScrolled, isWide }) {
         ))}
         <div className="pb-40 md:mt-20">
           {gloryButton.map((e) => (
-            <Button href={e.href} title={e.Title} Image={e.img} />
+            <Button key={e.id} href={e.href} title={e.Title} Image={e.img} />
           ))}
         </div>
       </div>

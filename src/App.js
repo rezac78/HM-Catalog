@@ -1,57 +1,86 @@
 import "./App.css";
+import React, { Suspense, lazy } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import HomePage from "./components/HomePage/index";
-import DesignPage from "./components/DesignPage";
 import Header from "./components/Header";
-import useScrollBeyond from "./hooks/useScrollBeyond";
 import Footer from "./components/Footer";
-import UniversityPage from "./components/UniversityPage";
-import SeniorPage from "./components/SeniorPage";
-import LoginPage from "./components/LoginPage";
-import GloryPage from "./components/GloryPage";
-import { path } from "./Event/fakeData";
-import AdditionsPage from "./components/AdditionsPage";
-import AchievementsPage from "./components/AchievementsPage";
-import MastersGraduatesPage from "./components/MastersGraduatesPage";
-import SupportPage from "./components/SupportPage";
-import MastersPage from "./components/MastersPage";
-import PHDmastersPage from "./components/PHDmastersPage";
-import councilPage from "./components/CouncilPage";
-import baPlusPage from "./components/BaPlusPage";
-import BaProfessionalPage from "./components/BaProfessionalPage";
-import MetacodePage from "./components/MetacodePage";
-import BootcampPage from "./components/BootcampPage";
-import PermissionsPage from "./components/PermissionsPage";
-import CertificationsPage from "./components/CertificationsPage";
-import FastTrackPlanPage from "./components/FastTrackPlanPage";
-import CollaborationSpacePage from "./components/CollaborationSpacePage";
-import ExecutionProcessPage from "./components/ExecutionProcessPage";
-import languageLearningPage from "./components/languageLearningPage";
-import DoctorateLanguagePage from "./components/DoctorateLanguagePage";
-import ClubPage from "./components/ClubPage";
-import OrganizationalLanguageBAPage from "./components/OrganizationalLanguageBAPage";
-import OrganizationalLanguagePage from "./components/OrganizationalLanguagePage";
-import StudentsPage from "./components/StudentsPage";
-import SatisfactionPage from "./components/SatisfactionPage";
-import CooperationPage from "./components/CooperationPage";
-import ChartPage from "./components/ChartPage";
-import AboutPage from "./components/AboutPage";
-import IELTSPage from "./components/IELTSPage";
-import ContactUsPage from "./components/ContactUsPage";
-import ParticipationPage from "./components/ParticipationPage";
-import PartnershipPage from "./components/PartnershipPage";
-import InternationalPage from "./components/InternationalPage";
-import WayOfSuccessPage from "./components/WayOfSuccessPage";
-import FagPage from "./components/FagPage";
-import CurrencyIncomePage from "./components/CurrencyIncomePage";
-import CompleteAcademicDocumentPage from "./components/CompleteAcademicDocumentPage";
-import BaPage from "./components/BaPage";
-import PhdPage from "./components/PHDPage";
+import useScrollBeyond from "./hooks/useScrollBeyond";
 import useWidthExceeds from "./hooks/useWidthExceeds ";
-import ConsentPage from "./components/ConsentPage";
-import CouncilBaPage from "./components/CouncilBaPage";
-import CouncilMetacodePage from "./components/CouncilMetacodePage";
-import CouncilFastTrackPlanPage from "./components/CouncilFastTrackPlanPage";
+import { path } from "./Event/fakeData";
+import Loading from "./components/shared/Loading/loading";
+// lazy Loading
+const HomePage = lazy(() => import("./components/HomePage"));
+const DesignPage = lazy(() => import("./components/DesignPage"));
+const UniversityPage = lazy(() => import("./components/UniversityPage"));
+const SeniorPage = lazy(() => import("./components/SeniorPage"));
+const LoginPage = lazy(() => import("./components/LoginPage"));
+const GloryPage = lazy(() => import("./components/GloryPage"));
+const AdditionsPage = lazy(() => import("./components/AdditionsPage"));
+const AchievementsPage = lazy(() => import("./components/AchievementsPage"));
+const MastersGraduatesPage = lazy(() =>
+  import("./components/MastersGraduatesPage")
+);
+const SupportPage = lazy(() => import("./components/SupportPage"));
+const MastersPage = lazy(() => import("./components/MastersPage"));
+const PHDmastersPage = lazy(() => import("./components/PHDmastersPage"));
+const CouncilPage = lazy(() => import("./components/CouncilPage"));
+const BaPlusPage = lazy(() => import("./components/BaPlusPage"));
+const BaProfessionalPage = lazy(() =>
+  import("./components/BaProfessionalPage")
+);
+const MetacodePage = lazy(() => import("./components/MetacodePage"));
+const BootcampPage = lazy(() => import("./components/BootcampPage"));
+const PermissionsPage = lazy(() => import("./components/PermissionsPage"));
+const CertificationsPage = lazy(() =>
+  import("./components/CertificationsPage")
+);
+const FastTrackPlanPage = lazy(() => import("./components/FastTrackPlanPage"));
+const CollaborationSpacePage = lazy(() =>
+  import("./components/CollaborationSpacePage")
+);
+const ExecutionProcessPage = lazy(() =>
+  import("./components/ExecutionProcessPage")
+);
+const LanguageLearningPage = lazy(() =>
+  import("./components/languageLearningPage")
+);
+const DoctorateLanguagePage = lazy(() =>
+  import("./components/DoctorateLanguagePage")
+);
+const ClubPage = lazy(() => import("./components/ClubPage"));
+const OrganizationalLanguageBAPage = lazy(() =>
+  import("./components/OrganizationalLanguageBAPage")
+);
+const OrganizationalLanguagePage = lazy(() =>
+  import("./components/OrganizationalLanguagePage")
+);
+const StudentsPage = lazy(() => import("./components/StudentsPage"));
+const SatisfactionPage = lazy(() => import("./components/SatisfactionPage"));
+const CooperationPage = lazy(() => import("./components/CooperationPage"));
+const ChartPage = lazy(() => import("./components/ChartPage"));
+const AboutPage = lazy(() => import("./components/AboutPage"));
+const IELTSPage = lazy(() => import("./components/IELTSPage"));
+const ContactUsPage = lazy(() => import("./components/ContactUsPage"));
+const ParticipationPage = lazy(() => import("./components/ParticipationPage"));
+const PartnershipPage = lazy(() => import("./components/PartnershipPage"));
+const InternationalPage = lazy(() => import("./components/InternationalPage"));
+const WayOfSuccessPage = lazy(() => import("./components/WayOfSuccessPage"));
+const ConsentPage = lazy(() => import("./components/ConsentPage"));
+const CouncilBaPage = lazy(() => import("./components/CouncilBaPage"));
+const CouncilMetacodePage = lazy(() =>
+  import("./components/CouncilMetacodePage")
+);
+const CouncilFastTrackPlanPage = lazy(() =>
+  import("./components/CouncilFastTrackPlanPage")
+);
+const FagPage = lazy(() => import("./components/FagPage"));
+const CurrencyIncomePage = lazy(() =>
+  import("./components/CurrencyIncomePage")
+);
+const CompleteAcademicDocumentPage = lazy(() =>
+  import("./components/CompleteAcademicDocumentPage")
+);
+const BaPage = lazy(() => import("./components/BaPage"));
+const PhdPage = lazy(() => import("./components/PHDPage"));
 const componentMapping = {
   home: HomePage,
   design: DesignPage,
@@ -68,11 +97,11 @@ const componentMapping = {
   ba: BaPage,
   phd: PhdPage,
   PHDmasters: PHDmastersPage,
-  council: councilPage,
+  council: CouncilPage,
   councilBa: CouncilBaPage,
   councilMetacode: CouncilMetacodePage,
   councilFastTrackPlan: CouncilFastTrackPlanPage,
-  baPlus: baPlusPage,
+  baPlus: BaPlusPage,
   baProfessional: BaProfessionalPage,
   metacode: MetacodePage,
   bootcamp: BootcampPage,
@@ -82,7 +111,7 @@ const componentMapping = {
   FastTrackPlan: FastTrackPlanPage,
   CollaborationSpace: CollaborationSpacePage,
   ExecutionProcess: ExecutionProcessPage,
-  languageLearning: languageLearningPage,
+  languageLearning: LanguageLearningPage,
   IELTS: IELTSPage,
   DoctorateLanguage: DoctorateLanguagePage,
   OrganizationalLanguageBA: OrganizationalLanguageBAPage,
@@ -105,30 +134,29 @@ function App() {
   const isScrolled = useScrollBeyond(1);
   const isWide = useWidthExceeds(768);
   return (
-    <div  className="wrapper">
-    <Router>
-      <Routes>
-        {path.map((e) => {
-          const Component = componentMapping[e.component];
-          return (
-            <Route
-              key={e.id}
-              path={e.path}
-              element={
-                <div className="relative flex flex-col h-screen">
-                  <Header
-                    links={e.linkList}
-                    type="mobile"
-                  />
-                  <Component isWide={isWide} isScrolled={isScrolled} />
-                  <Footer />
-                </div>
-              }
-            />
-          );
-        })}
-      </Routes>
-    </Router>
+    <div className="wrapper">
+      <Router>
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            {path.map((e) => {
+              const Component = componentMapping[e.component];
+              return (
+                <Route
+                  key={e.id}
+                  path={e.path}
+                  element={
+                    <div key={e.id} className="relative flex flex-col h-screen">
+                      <Header links={e.linkList} type="mobile" />
+                      <Component isWide={isWide} isScrolled={isScrolled} />
+                      <Footer />
+                    </div>
+                  }
+                />
+              );
+            })}
+          </Routes>
+        </Suspense>
+      </Router>
     </div>
   );
 }

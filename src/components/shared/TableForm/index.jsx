@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const TableComponent = () => {
   const rowsPerPage = 5;
@@ -35,7 +36,8 @@ const TableComponent = () => {
             onChange={(e) => setQuery(e.target.value)}
           />
           <button className="bg-[#F5F5F5] p-2 rounded-l-lg">
-            <img
+            <LazyLoadImage
+              effect="blur"
               src="/icon/search-normal.svg"
               alt="notFound"
               className="text-xl"
@@ -43,7 +45,12 @@ const TableComponent = () => {
           </button>
         </div>
         <button className="p-3 bg-[#F5F5F5]">
-          <img src="/icon/iconDown.svg" alt="notFound" className="text-xl" />
+          <LazyLoadImage
+            effect="blur"
+            src="/icon/iconDown.svg"
+            alt="notFound"
+            className="text-xl"
+          />
         </button>
       </div>
       <div className="overflow-x-auto">

@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function LoginPath() {
   return (
     <>
@@ -9,11 +11,14 @@ function LoginPath() {
         <div
           className={`bg-[#387AB4] rounded-full mt-5 pt-2 md:pt-6 w-[80px] h-[80px] md:w-[110px] md:h-[110px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/messages.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/messages.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]"
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             مشاوره
           </span>
@@ -32,11 +37,14 @@ function LoginPath() {
         <div
           className={`bg-[#CC8B8B] rounded-full mt-5 pt-4 md:pt-7 w-[90px] h-[90px] md:w-[120px] md:h-[120px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/security-user.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/security-user.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             اطمینان
           </span>
@@ -67,13 +75,16 @@ function LoginPath() {
         <div className="absolute left-4 top-[5.5rem] w-[1px] h-[80%] border-[#A0B789] border md:border-[1.7px] border-dashed"></div>
         <div className="absolute left-16 top-7 w-[46%] h-[1px] md:h-[1.5px] bg-[#A0B789]"></div>
         <div
-          className={`bg-[#A0B789] rounded-full mt-5 pt-4 md:pt-7 w-[90px] h-[90px] md:w-[120px] md:h-[120px] `}
+          className={`bg-[#A0B789]  rounded-full mt-5 pt-4 md:pt-7 w-[90px] h-[90px] md:w-[120px] md:h-[120px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/information.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/information.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]"
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             اطلاعات
           </span>
@@ -97,11 +108,14 @@ function LoginPath() {
         <div
           className={`bg-[#387AB4] rounded-full mt-5 pt-2 w-[80px] h-[80px] md:pt-6 md:w-[110px] md:h-[110px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/security-user.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/security-user.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]"
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             انتخاب
           </span>
@@ -131,12 +145,14 @@ function LoginPath() {
         <div
           className={`bg-[#C9C38A] rounded-full mt-5 pt-4 md:pt-7 w-[90px] h-[90px] md:w-[120px] md:h-[120px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/empty-wallet.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
-
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/empty-wallet.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]"
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             پرداخت
           </span>
@@ -157,11 +173,14 @@ function LoginPath() {
         <div
           className={`bg-[#B17698] rounded-full mt-2 md:mt-1 pt-4 w-[90px] h-[90px] md:pt-7 md:w-[120px] md:h-[120px] `}
         >
-          <img
-            alt="notfound"
-            src={"/icon/user-add.svg"}
-            className="w-[24px] h-[24px] md:w-[28px] md:h-[28px] mx-auto "
-          />
+          <div className="flex justify-center">
+            <LazyLoadImage
+              effect="blur"
+              alt="notfound"
+              src={"/icon/user-add.svg"}
+              className="w-[24px] h-[24px] md:w-[28px] md:h-[28px]"
+            />
+          </div>
           <span className="flex align-center justify-center text-[#ffff] py-2 text-[14px] md:text-[16px]">
             ثبت‌ نام
           </span>

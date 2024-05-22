@@ -45,7 +45,7 @@ function ContactUsPage({ isScrolled, isWide }) {
             <ListForm
               title={ContactUsTables2[0].Title}
               Data={ContactUsTables2[0].linkList}
-              type=""
+              type="list-icon"
             />
           </div>
         </>
@@ -86,7 +86,7 @@ function ContactUsPage({ isScrolled, isWide }) {
             <ListForm
               title={ContactUsTables2[0].Title}
               Data={ContactUsTables2[0].linkList}
-              type=""
+              type="list-icon"
             />
           </div>
         </div>

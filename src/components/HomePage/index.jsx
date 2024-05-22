@@ -1,4 +1,5 @@
 import HomeContentPage from "../shared/HomeContentPage";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import {
   homeMain,
   homeMainCard,
@@ -34,7 +35,11 @@ function HomePage({ isScrolled }) {
         </div>
         <div className="hidden md:flex justify-center w-full md:px-10">
           <div className="-mt-[5px]">
-            <img alt="notFound" src="/images/homeLogo.svg" />
+            <LazyLoadImage
+              alt="notFound"
+              effect="blur"
+              src="/images/homeLogo.svg"
+            />
             <div className="flex w-6/12 my-5">
               <div className="h-24 w-1 ml-3 bg-[#387AB4]"></div>
               {homeMain.map((e) => (
@@ -61,7 +66,9 @@ function HomePage({ isScrolled }) {
         </div>
         <div className="hidden md:flex relative py-10">
           <div className="absolute bottom-16 bg-[#828282] w-[100%] h-[2px] rounded-tl-[2.5rem]"></div>
-          <div className="absolute left-1/2 -translate-x-1/2 bottom-14 bg-white z-10 px-10 text-[#828282] text-[18px] font-bold">تجربه بی‌نظیر از خدمات با کیفیت</div>
+          <div className="absolute left-1/2 -translate-x-1/2 bottom-14 bg-white z-10 px-10 text-[#595959] text-[18px] font-bold">
+            تجربه بی‌نظیر از خدمات با کیفیت
+          </div>
         </div>
         <div className="hidden md:flex relative">
           <div className="absolute bottom-0 bg-[#387AB4] w-[40px] h-[350px] rounded-tl-[2.5rem]"></div>

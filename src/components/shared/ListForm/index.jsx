@@ -1,7 +1,9 @@
 import React from "react";
 import SoundPart from "../SoundPart";
 import LinkShare from "../LinkShare";
-
+import { SocialMedia } from "../../../Event/fakeData";
+import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 function ListForm({ title, Data, type }) {
   return (
     <div
@@ -40,11 +42,13 @@ function ListForm({ title, Data, type }) {
             >
               {Data.map((e, index) => (
                 <li
+                  key={index}
                   className={`relative ${
                     type === "listNumber" ? "pr-0 py-1" : "pr-3 py-2"
                   }`}
                 >
                   {type === "listNumber" ? index + 1 + "_" + e.item : e.item}
+
                   {e.linkAddress && (
                     <LinkShare
                       linkAddress={e.linkAddress}
@@ -59,6 +63,20 @@ function ListForm({ title, Data, type }) {
           )}
         </span>
       </div>
+      {type === "list-icon" && (
+        <div className="flex flex-wrap justify-center gap-4 md:gap-8 py-5 md:py-10 px-5">
+          {SocialMedia.map((e) => (
+            <Link key={e.id} to={e.Link}>
+              <LazyLoadImage
+                effect="blur"
+                alt="notfound"
+                src={e.img}
+                className="w-12 md:w-20 h-12 md:h-20"
+              />
+            </Link>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

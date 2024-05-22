@@ -22,7 +22,7 @@ function CouncilBaPage({ isScrolled, isWide }) {
             <ListForm
               title={ConsultationMainTable[0].Title}
               Data={ConsultationMainTable[0].linkList}
-              type=""
+              type="list-icon"
             />
           </div>
           <div className="mb-14">
@@ -54,7 +54,7 @@ function CouncilBaPage({ isScrolled, isWide }) {
             <ListForm
               title={ConsultationMainTable[0].Title}
               Data={ConsultationMainTable[0].linkList}
-              type=""
+              type="list-icon"
             />
           </div>
           <div className="my-6">

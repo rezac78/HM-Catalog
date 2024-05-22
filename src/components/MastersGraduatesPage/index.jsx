@@ -3,6 +3,8 @@ import {
   MastersGraduatesMainTitle,
   MastersGraduatesMainTitle2,
   MastersGraduatesButton,
+  MastersGraduatesButton2,
+  MastersGraduatesButton3,
   MastersGraduatesMainTitle3,
 } from "../../Event/fakeData";
 import Button from "../shared/Button";
@@ -40,6 +42,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
           <div className="mb-5 md:mt-20">
             {MastersGraduatesButton.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}
@@ -59,6 +62,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
           <div className="mb-5 md:mt-20">
             {MastersGraduatesButton.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}
@@ -78,6 +82,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
           <div className="mb-5 md:mt-20">
             {MastersGraduatesButton.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}
@@ -114,9 +119,10 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
+          <div className="grid grid-cols-2 my-10 ">
             {MastersGraduatesButton.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}
@@ -133,9 +139,10 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
-            {MastersGraduatesButton.map((e) => (
+          <div className="grid grid-cols-2 my-10">
+            {MastersGraduatesButton2.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}
@@ -152,9 +159,10 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around sm:pt-5">
-            {MastersGraduatesButton.map((e) => (
+          <div className="grid grid-cols-2 my-10">
+            {MastersGraduatesButton3.map((e) => (
               <Button
+                key={e.id}
                 type="card"
                 shortTitle={e.shortTitle}
                 href={e.href}

@@ -26,7 +26,7 @@ function AchievementsPage({ isScrolled, isWide }) {
           ))}
           <div className="pb-40 md:mt-20">
             {AchievementsButton.map((e) => (
-              <Button href={e.href} title={e.Title} Image={e.img} />
+              <Button key={e.id} href={e.href} title={e.Title} Image={e.img} />
             ))}
           </div>
         </>
@@ -51,7 +51,7 @@ function AchievementsPage({ isScrolled, isWide }) {
           ))}
           <div className="pb-40 md:mt-20">
             {AchievementsButton.map((e) => (
-              <Button href={e.href} title={e.Title} Image={e.img} />
+              <Button key={e.id} href={e.href} title={e.Title} Image={e.img} />
             ))}
           </div>
         </div>

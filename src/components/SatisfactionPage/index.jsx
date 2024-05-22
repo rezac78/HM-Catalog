@@ -2,7 +2,6 @@ import HomeContentPage from "../shared/HomeContentPage";
 import { satisfactionMain } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
-import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
 
 function SatisfactionPage({ isScrolled, isWide }) {

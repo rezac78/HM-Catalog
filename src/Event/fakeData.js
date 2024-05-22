@@ -628,7 +628,8 @@ export const PartnershipMain2 = [
 export const sstudentMain = [
   {
     id: 1,
-    content:"ما در همراهان افتخار این را داشته ایم که بیش از 2500 دانشجو را در مقاطع مختلف دانشگاهی از شروع تا فارغ التحصیلی همراهی کنیم .",
+    content:
+      "ما در همراهان افتخار این را داشته ایم که بیش از 2500 دانشجو را در مقاطع مختلف دانشگاهی از شروع تا فارغ التحصیلی همراهی کنیم .",
   },
 ];
 export const bootcampMain = [
@@ -823,7 +824,6 @@ export const homeMainCard = [
     image: "/images/contact.png",
     link: "/Contactus",
   },
-
 ];
 export const homeDeskTopMainCard = [
   {
@@ -868,7 +868,6 @@ export const homeDeskTopMainCard = [
     imageBack: "/images/brushed.png",
     link: "/Contactus",
   },
-
 ];
 export const designMainCard = [
   {
@@ -1996,14 +1995,157 @@ export const AchievementsButton = [
 export const MastersGraduatesButton = [
   {
     id: 1,
-    img: "/icon/image-380.svg",
-    Title: "عباس صبوری- مدیریت بازرگانی-بازاریابی",
-    shortTitle: "مهر 1400-کارشناسی‌ارشد تهران",
+    img: "/images/user3.jpeg",
+    Title: "مرتضی حسینی-روابط عمومی/مدیریت بازرگانی",
+    shortTitle: "1400 کارشناسی ری",
   },
   {
     id: 2,
-    img: "/icon/image-380.svg",
-    Title: "عباس صبوری- مدیریت بازرگانی-بازاریابی",
-    shortTitle: "مهر 1400-کارشناسی‌ارشد تهران",
+    img: "/images/user2.jpeg",
+    Title: "مستانه قویدل - روابط عمومی",
+    shortTitle: "1400 کارشناسی تهران",
+  },
+  {
+    id: 3,
+    img: "/images/user1.jpeg",
+    Title: "محسن فرج الهی - عمران",
+    shortTitle: "1400 کارشناسی تهران ",
+  },
+  {
+    id: 4,
+    img: "/images/user10.jpeg",
+    Title: "محمد اسماعیل مرادی - مکانیک",
+    shortTitle: "1400 کارشناسی مازندان",
+  },
+  {
+    id: 5,
+    img: "/images/user8.jpeg",
+    Title: "بیژنگ اقدامی کلیدبری - حقوقی خصوصی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+  {
+    id: 6,
+    img: "/images/user7.jpeg",
+    Title: "عطیه خرم - مدیریت دولتی گرایش منابع انسانی",
+    shortTitle: "مهر 1402 دکتری تهران",
+  },
+  {
+    id: 7,
+    img: "/images/user5.jpeg",
+    Title: "حسین پایندانی - مدیریت بازرگانی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+  {
+    id: 8,
+    img: "/images/user6.jpeg",
+    Title: "گل نسازمانی - روانشناسی عمومی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+  {
+    id: 9,
+    img: "/images/user9.jpeg",
+    Title: "عباس صبوری - مدیریت بازرگانی - بازاریابی",
+    shortTitle: "1400 کارشناسی ارشد تبریز",
+  },
+  {
+    id: 10,
+    img: "/images/user4.jpeg",
+    Title: "محمد نقدی - روانشناسی تربیتی",
+    shortTitle: "مهر 1402 کارشناسی ارشد تهران",
+  },
+];
+
+
+export const MastersGraduatesButton2 = [
+  {
+    id: 1,
+    img: "/images/user3.jpeg",
+    Title: "مرتضی حسینی-روابط عمومی/مدیریت بازرگانی",
+    shortTitle: "1400 کارشناسی ری",
+  },
+  {
+    id: 2,
+    img: "/images/user2.jpeg",
+    Title: "مستانه قویدل - روابط عمومی",
+    shortTitle: "1400 کارشناسی تهران",
+  },
+  {
+    id: 3,
+    img: "/images/user1.jpeg",
+    Title: "محسن فرج الهی - عمران",
+    shortTitle: "1400 کارشناسی تهران ",
+  },
+  {
+    id: 4,
+    img: "/images/user10.jpeg",
+    Title: "محمد اسماعیل مرادی - مکانیک",
+    shortTitle: "1400 کارشناسی مازندان",
+  },
+  {
+    id: 5,
+    img: "/images/user5.jpeg",
+    Title: "حسین پایندانی - مدیریت بازرگانی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+  {
+    id: 6,
+    img: "/images/user9.jpeg",
+    Title: "عباس صبوری - مدیریت بازرگانی - بازاریابی",
+    shortTitle: "1400 کارشناسی ارشد تبریز",
+  },
+  {
+    id: 7,
+    img: "/images/user4.jpeg",
+    Title: "محمد نقدی - روانشناسی تربیتی",
+    shortTitle: "مهر 1402 کارشناسی ارشد تهران",
+  },
+];
+
+export const MastersGraduatesButton3 = [
+  {
+    id: 1,
+    img: "/images/user8.jpeg",
+    Title: "بیژنگ اقدامی کلیدبری - حقوقی خصوصی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+  {
+    id: 2,
+    img: "/images/user7.jpeg",
+    Title: "عطیه خرم - مدیریت دولتی گرایش منابع انسانی",
+    shortTitle: "مهر 1402 دکتری تهران",
+  },
+  {
+    id: 3,
+    img: "/images/user6.jpeg",
+    Title: "گل نسازمانی - روانشناسی عمومی",
+    shortTitle: "مهر 1402 دکتری رشت",
+  },
+];
+
+export const SocialMedia = [
+  {
+    id: 1,
+    img: "/icon/eit.svg",
+    Link: "#",
+  },
+  {
+    id: 2,
+    img: "/icon/whatsApp.svg",
+    Link: "#",
+  },
+  {
+    id: 3,
+    img: "/icon/telegram.svg",
+    Link: "#",
+  },
+  {
+    id: 4,
+    img: "/icon/Robika.svg",
+    Link: "#",
+  },
+  {
+    id: 5,
+    img: "/icon/bale.svg",
+    Link: "#",
   },
 ];

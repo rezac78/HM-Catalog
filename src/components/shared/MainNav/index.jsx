@@ -1,3 +1,5 @@
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 function MainNav() {
   return (
     <div className="bg-[#1E73BF] flex justify-end p-14 gap-x-10 rounded-md	">
@@ -9,7 +11,12 @@ function MainNav() {
           backgroundPosition: "center",
         }}
       >
-        <img src="/images/hat1.png" alt="Logo" className="h-[80px] w-[80px] z-20" />
+        <LazyLoadImage
+          effect="blur"
+          src="/images/hat1.png"
+          alt="Logo"
+          className="h-[80px] w-[80px] z-20"
+        />
         <span className="font-bold text-white flex items-center justify-center mt-2">
           طرح ها
         </span>
