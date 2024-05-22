@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function CardDeskTop({ link, image, imageBack, Title }) {
+function CardDeskTop({ link, image, Title }) {
   return (
     <Link
       to={link}

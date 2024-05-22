@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { Suspense, lazy } from "react";
+import React, { Suspense, lazy, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -133,10 +133,18 @@ const componentMapping = {
 function App() {
   const isScrolled = useScrollBeyond(1);
   const isWide = useWidthExceeds(768);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 30000);
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className="wrapper">
       <Router>
         <Suspense fallback={<Loading />}>
+          {loading && <Loading />}
           <Routes>
             {path.map((e) => {
               const Component = componentMapping[e.component];
