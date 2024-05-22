@@ -152,17 +152,20 @@ function App() {
                   key={e.id}
                   path={e.path}
                   element={
-                    <div key={e.id} className="relative flex flex-col h-screen">
+                    <>
                       {loading ? (
                         <Loading />
                       ) : (
-                        <>
+                        <div
+                          key={e.id}
+                          className="relative flex flex-col h-screen"
+                        >
                           <Header links={e.linkList} type="mobile" />
                           <Component isWide={isWide} isScrolled={isScrolled} />
                           <Footer />
-                        </>
+                        </div>
                       )}
-                    </div>
+                    </>
                   }
                 />
               );
