@@ -7,6 +7,16 @@ import useScrollBeyond from "./hooks/useScrollBeyond";
 import useWidthExceeds from "./hooks/useWidthExceeds ";
 import { path } from "./Event/fakeData";
 import Loading from "./components/shared/Loading/loading";
+import BenefitPage from "./components/BenefitPage";
+import highTrafficPlansPage from "./components/highTrafficPlansPage";
+import AssociateDegreePage from "./components/AssociateDegreePage";
+import AssociateMasterDegreePage from "./components/AssociateMasterDegreePage";
+import AssociatePHDPage from "./components/AssociatePHDPage";
+import AssociateSpecialDegreePage from "./components/AssociateSpecialDegreePage";
+import AssociateBADegreePage from "./components/AssociateBADegreePage";
+import AssociateComprehensivePhDDegreePage from "./components/AssociateComprehensivePhDDegreePage";
+import IncomeGenerationPage from "./components/IncomeGenerationPage";
+import CollaboratePage from "./components/CollaboratePage";
 // lazy Loading
 const HomePage = lazy(() => import("./components/HomePage"));
 const DesignPage = lazy(() => import("./components/DesignPage"));
@@ -129,6 +139,16 @@ const componentMapping = {
   Partnership: PartnershipPage,
   International: InternationalPage,
   wayOfSuccess: WayOfSuccessPage,
+  benefits: BenefitPage,
+  highTrafficPlans: highTrafficPlansPage,
+  AssociateDegree: AssociateDegreePage,
+  AssociateMasterDegree: AssociateMasterDegreePage,
+  AssociatePHD: AssociatePHDPage,
+  AssociateSpecialDegree: AssociateSpecialDegreePage,
+  AssociateBADegree: AssociateBADegreePage,
+  AssociateComprehensivePhDDegree: AssociateComprehensivePhDDegreePage,
+  IncomeGeneration: IncomeGenerationPage,
+  Collaborate: CollaboratePage,
 };
 function App() {
   const isScrolled = useScrollBeyond(1);

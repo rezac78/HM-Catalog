@@ -17,31 +17,8 @@ function MetacodePage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="متاکد" titleLink="/design" />
+          <HeaderTitle title="متاکد  (مدرسه تخصصی آنلاین کسب درآمد )" titleLink="/design" />
           {metacodeMain2.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
-          {metacodeMain.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
-          <div className="mb-2">
-            <ListForm
-              title={metacodeMainCard[0].Title}
-              Data={metacodeMainCard[0].linkList}
-              type="listNumber"
-            />
-          </div>
-          {metacodeMain3.map((e) => (
             <HomeContentPage
               key={e.id}
               title={e.Title}
@@ -67,17 +44,7 @@ function MetacodePage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="متاکد" titleLink="/design" />
-          <div className="mx-auto my-10">
-            {metacodeMain.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
-          </div>
+          <HeaderTitle title="متاکد  (مدرسه تخصصی آنلاین کسب درآمد )" titleLink="/design" />
           <div className="mx-auto my-10">
             {metacodeMain2.map((e) => (
               <HomeContentPage
@@ -88,21 +55,6 @@ function MetacodePage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="my-6">
-            <ListForm
-              title={metacodeMainCard[0].Title}
-              Data={metacodeMainCard[0].linkList}
-              type="listNumber"
-            />
-          </div>
-          {metacodeMain3.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
           <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-center py-10">
             {metaTagMainCard.map((e) => (
               <CardMain

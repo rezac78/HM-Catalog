@@ -1,5 +1,12 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { baPlusMain, baPlusTables, baPlusLink } from "../../Event/fakeData";
+import {
+  baPlusMain,
+  baPlusTables,
+  baPlusTables2,
+  baPlusTables3,
+  baPlusTables4,
+  baPlusLink,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
@@ -11,7 +18,7 @@ function BaPlusPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="BA پلاس" titleLink="/BA" />
+          <HeaderTitle title="BBA" titleLink="/BA" />
           {baPlusMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -24,6 +31,27 @@ function BaPlusPage({ isScrolled, isWide }) {
             <ListForm
               title={baPlusTables[0].Title}
               Data={baPlusTables[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={baPlusTables2[0].Title}
+              Data={baPlusTables2[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={baPlusTables3[0].Title}
+              Data={baPlusTables3[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={baPlusTables4[0].Title}
+              Data={baPlusTables4[0].linkList}
               type=""
             />
           </div>
@@ -43,7 +71,7 @@ function BaPlusPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="BA پلاس" titleLink="/BA" />
+          <HeaderTitle title="BBA" titleLink="/BA" />
           <div className="mx-auto my-10">
             {baPlusMain.map((e) => (
               <HomeContentPage
@@ -61,6 +89,28 @@ function BaPlusPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
+          <div className="my-6">
+            <ListForm
+              title={baPlusTables2[0].Title}
+              Data={baPlusTables2[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="my-6">
+            <ListForm
+              title={baPlusTables3[0].Title}
+              Data={baPlusTables3[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="my-6">
+            <ListForm
+              title={baPlusTables4[0].Title}
+              Data={baPlusTables4[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="my-6">
           {baPlusLink.map((e) => (
             <LinkShare
               key={e.id}
@@ -70,6 +120,7 @@ function BaPlusPage({ isScrolled, isWide }) {
               type=""
             />
           ))}
+          </div>
         </div>
       )}
     </HeaderScroll>

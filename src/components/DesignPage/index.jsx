@@ -9,7 +9,7 @@ function DesignPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="طرح ها" titleLink="/" />
+          <HeaderTitle title="محصولات و خدمات" titleLink="/" />
           {designMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -35,8 +35,8 @@ function DesignPage({ isScrolled, isWide }) {
           <div className="flex justify-start mt-10">
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
-          <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="طرح ها" titleLink="/" />
+          <div className="border-t-2 border-blue-50 w-full flex mx-auto mt-5 mb-10"></div>
+          <HeaderTitle title="محصولات و خدمات" titleLink="/" />
           <div className="mx-auto my-10">
             {designMain.map((e) => (
               <HomeContentPage

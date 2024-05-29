@@ -4,20 +4,22 @@ import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
 
-function CertificationsPage({ isScrolled, isWide }) {
+function BootcampPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="اخذ مدرک و مجوزها" titleLink="/metacode" />
-          {CertificationsMain.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
+          <HeaderTitle title="مجوز کسب و کار" titleLink="/metacode" />
+          <div className="mb-6">
+            {CertificationsMain.map((e) => (
+              <HomeContentPage
+                key={e.id}
+                title={e.Title}
+                content={e.content}
+                type={false}
+              />
+            ))}
+          </div>
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -25,8 +27,8 @@ function CertificationsPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="اخذ مدرک و مجوزها" titleLink="/metacode" />
-          <div className="mx-auto my-10">
+          <HeaderTitle title="مجوز کسب و کار" titleLink="/metacode" />
+          <div className="mx-auto my-5">
             {CertificationsMain.map((e) => (
               <HomeContentPage
                 key={e.id}
@@ -42,4 +44,4 @@ function CertificationsPage({ isScrolled, isWide }) {
   );
 }
 
-export default CertificationsPage;
+export default BootcampPage;

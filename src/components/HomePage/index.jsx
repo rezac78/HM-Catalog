@@ -33,15 +33,15 @@ function HomePage({ isScrolled }) {
             />
           ))}
         </div>
-        <div className="hidden md:flex justify-center w-full md:px-10">
-          <div className="-mt-[5px]">
-            <LazyLoadImage
-              alt="notFound"
-              effect="blur"
-              src="/images/homeLogo.svg"
-            />
-            <div className="flex w-6/12 my-5">
-              <div className="h-24 w-1 ml-3 bg-[#387AB4]"></div>
+        <div className="hidden md:flex flex-col items-center justify-center w-full md:px-10 max-w-[1200px] mx-auto">
+          <LazyLoadImage
+            alt="notFound"
+            effect="blur"
+            src="/images/homeLogo.svg"
+          />
+          <div className="flex my-5 w-full justify-center">
+            <div className="h-28 w-1 bg-[#387AB4]"></div>
+            <div className="flex flex-wrap justify-center w-full md:px-2">
               {homeMain.map((e) => (
                 <HomeContentPage
                   key={e.id}
@@ -54,7 +54,7 @@ function HomePage({ isScrolled }) {
           </div>
         </div>
         <div className="hidden md:flex justify-center my-auto pl-3 pr-12 py-12 gap-3">
-          {homeDeskTopMainCard.map((e, i) => (
+          {homeMainCard.map((e, i) => (
             <CardDeskTop
               key={i}
               image={e.image}

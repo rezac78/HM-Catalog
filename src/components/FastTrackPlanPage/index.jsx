@@ -1,16 +1,20 @@
-import { FastTrackPlanMain, FastTrackPlanMainCard } from "../../Event/fakeData";
-import CardMain from "../shared/CardMain";
+import {
+  FastTrackPlanMain,
+  FastTrackPlanTable,
+  FastTrackPlanTable2,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HomeContentPage from "../shared/HomeContentPage";
 import HeaderScroll from "../shared/HeaderScroll";
+import ListForm from "../shared/ListForm";
 
 function FastTrackPlanPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="طرح شتاب" titleLink="/design" />
+          <HeaderTitle title="طرح شتاب" titleLink="/Participation" />
           {FastTrackPlanMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -19,17 +23,18 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
-            {FastTrackPlanMainCard.map((e) => (
-              <CardMain
-                key={e.id}
-                Title={e.Title}
-                Image={e.image}
-                link={e.link}
-                type={false}
-              />
-            ))}
-          </div>
+          <HeaderTitle title="فضای همکاری" titleLink="/" showIcon={false} />
+          <ListForm
+            title={FastTrackPlanTable[0].Title}
+            Data={FastTrackPlanTable[0].linkList}
+            type=""
+          />
+          <HeaderTitle title="فرآیند اجرایی" titleLink="/" showIcon={false} />
+          <ListForm
+            title={FastTrackPlanTable2[0].Title}
+            Data={FastTrackPlanTable2[0].linkList}
+            type=""
+          />
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -37,7 +42,7 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="طرح شتاب" titleLink="/" />
+          <HeaderTitle title="طرح شتاب" titleLink="/Participation" />
           <div className="mx-auto my-10">
             {FastTrackPlanMain.map((e) => (
               <HomeContentPage
@@ -48,16 +53,26 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-2 md:flex flex-wrap md:justify-around py-10">
-            {FastTrackPlanMainCard.map((e) => (
-              <CardMain
-                key={e.id}
-                Title={e.Title}
-                Image={e.image}
-                link={e.link}
-                type={false}
-              />
-            ))}
+          <div className="my-12">
+            <HeaderTitle title="فضای همکاری" titleLink="/" showIcon={false} />
+          </div>
+
+          <div className="my-5">
+            <ListForm
+              title={FastTrackPlanTable[0].Title}
+              Data={FastTrackPlanTable[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="my-12">
+            <HeaderTitle title="فرآیند اجرایی" titleLink="/" showIcon={false} />
+          </div>
+          <div className="my-5">
+            <ListForm
+              title={FastTrackPlanTable2[0].Title}
+              Data={FastTrackPlanTable2[0].linkList}
+              type=""
+            />
           </div>
         </div>
       )}

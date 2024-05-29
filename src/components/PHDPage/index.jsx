@@ -1,5 +1,10 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { PhdMain, PhdMain2, PhdMainTable } from "../../Event/fakeData";
+import {
+  PhdMain,
+  PhdMainTable,
+  PhdMainTable2,
+  PhdMainTable3,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
@@ -18,19 +23,25 @@ function PhdPage({ isWide }) {
               type={false}
             />
           ))}
-          {PhdMain2.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
           <div className="mb-14">
             <ListForm
               title={PhdMainTable[0].Title}
               Data={PhdMainTable[0].linkList}
-              type=""
+              type="listNumber"
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={PhdMainTable2[0].Title}
+              Data={PhdMainTable2[0].linkList}
+              type="listNumber"
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={PhdMainTable3[0].Title}
+              Data={PhdMainTable3[0].linkList}
+              type="listNumber"
             />
           </div>
         </>
@@ -51,19 +62,25 @@ function PhdPage({ isWide }) {
               />
             ))}
           </div>
-          {PhdMain2.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
           <div className="my-6">
             <ListForm
               title={PhdMainTable[0].Title}
               Data={PhdMainTable[0].linkList}
-              type=""
+              type="listNumber"
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={PhdMainTable2[0].Title}
+              Data={PhdMainTable2[0].linkList}
+              type="listNumber"
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={PhdMainTable3[0].Title}
+              Data={PhdMainTable3[0].linkList}
+              type="listNumber"
             />
           </div>
         </div>

@@ -1,23 +1,21 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { InternationalMain } from "../../Event/fakeData";
+import { InternationalTable } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
+import ListForm from "../shared/ListForm";
 
 function InternationalPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="آموزش از راه دور بین­ الملل" titleLink="/Participation" />
-          {InternationalMain.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
+          <HeaderTitle title="طرح مشارکت مراکز آموزشی" titleLink="/Participation" />
+          <ListForm
+            title={InternationalTable[0].Title}
+            Data={InternationalTable[0].linkList}
+            type=""
+          />
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -25,16 +23,13 @@ function InternationalPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
-          <HeaderTitle title="آموزش از راه دور بین­ الملل" titleLink="/Participation" />
-          <div className="mx-auto my-10">
-            {InternationalMain.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
+          <HeaderTitle title="طرح مشارکت مراکز آموزشی" titleLink="/Participation" />
+          <div className="my-2">
+            <ListForm
+              title={InternationalTable[0].Title}
+              Data={InternationalTable[0].linkList}
+              type=""
+            />
           </div>
         </div>
       )}

@@ -18,7 +18,7 @@ function MainNav() {
           className="h-[80px] w-[80px] z-20"
         />
         <span className="font-bold text-white flex items-center justify-center mt-2">
-          طرح ها
+          محصولات و خدمات
         </span>
       </div>
     </div>

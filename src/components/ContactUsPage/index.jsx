@@ -1,15 +1,12 @@
-import HomeContentPage from "../shared/HomeContentPage";
 import {
-  ContactUsMain,
-  ContactUsMain2,
   ContactUsTables,
   ContactUsTables2,
+  ContactUsTables3,
 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
 import ListForm from "../shared/ListForm";
-import LinkShare from "../shared/LinkShare";
 
 function ContactUsPage({ isScrolled, isWide }) {
   return (
@@ -17,28 +14,19 @@ function ContactUsPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="ارتباط با ما" titleLink="/" />
-          {ContactUsMain.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
+          <div className="mb-12">
+            <ListForm
+              title={ContactUsTables3[0].Title}
+              Data={ContactUsTables3[0].linkList}
+              type="listLink"
             />
-          ))}
-          {ContactUsMain2.map((e) => (
-            <LinkShare
-              key={e.id}
-              title={e.title}
-              linkAddress={e.linkAddress}
-              HrefAddress={e.HrefAddress}
-              type=""
-            />
-          ))}
+          </div>
+         
           <div className="mb-12">
             <ListForm
               title={ContactUsTables[0].Title}
               Data={ContactUsTables[0].linkList}
-              type="listLink"
+              type=""
             />
           </div>
           <div className="mb-12">
@@ -56,30 +44,18 @@ function ContactUsPage({ isScrolled, isWide }) {
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-20"></div>
           <HeaderTitle title="ارتباط با ما" titleLink="/" />
-          <div className="mx-auto my-10">
-            {ContactUsMain.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
-          </div>
-          {ContactUsMain2.map((e) => (
-            <LinkShare
-              key={e.id}
-              title={e.title}
-              linkAddress={e.linkAddress}
-              HrefAddress={e.HrefAddress}
-              type=''
+          <div className="my-6">
+            <ListForm
+              title={ContactUsTables3[0].Title}
+              Data={ContactUsTables3[0].linkList}
+              type="listLink"
             />
-          ))}
+          </div>
           <div className="my-6">
             <ListForm
               title={ContactUsTables[0].Title}
               Data={ContactUsTables[0].linkList}
-              type="listLink"
+              type=""
             />
           </div>
           <div className="my-6">

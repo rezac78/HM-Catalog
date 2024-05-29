@@ -1,15 +1,17 @@
 import { Link } from "react-router-dom";
 
-function HeaderTitle({ title, titleLink }) {
+function HeaderTitle({ title, titleLink, showIcon = true }) {
   return (
     <>
-      <div className="flex justify-end  mt-2">
-        <Link className="flex gap-x-2" to={titleLink}>
-          <img alt="notfound" src="/icon/icon.svg" />
-          <span>بازگشت</span>
-        </Link>
-      </div>
-      <div className="flex justify-start gap-x-2 mt-1 md:mt-0">
+      {showIcon && (
+        <div className="flex justify-end  mt-2">
+          <Link className="flex gap-x-2" to={titleLink}>
+            <img alt="notfound" src="/icon/icon.svg" />
+            <span>بازگشت</span>
+          </Link>
+        </div>
+      )}
+      <div className="flex justify-start gap-x-1 mt-1 md:mt-0">
         <div className="relative">
           <img
             className="-mt-[1.5px]"

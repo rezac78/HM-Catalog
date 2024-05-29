@@ -9,7 +9,7 @@ function CompleteAcademicDocumentPage({ isScrolled, isWide }) {
     <HeaderScroll isScrolled={isScrolled}>
       {!isWide ? (
         <>
-          <HeaderTitle title="تکمیل مدارک دانشگاهی" titleLink="/metacode" />
+          <HeaderTitle title="تکمیل و بروزرسانی مدارک" titleLink="/metacode" />
           {CompleteAcademicDocumentsMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -25,7 +25,7 @@ function CompleteAcademicDocumentPage({ isScrolled, isWide }) {
             <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
-          <HeaderTitle title="تکمیل مدارک دانشگاهی" titleLink="/metacode" />
+          <HeaderTitle title="تکمیل و بروزرسانی مدارک" titleLink="/metacode" />
           <div className="mx-auto my-10">
             {CompleteAcademicDocumentsMain.map((e) => (
               <HomeContentPage

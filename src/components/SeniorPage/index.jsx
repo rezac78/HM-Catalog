@@ -1,5 +1,10 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import { mastersMain, mastersMain2, mastersTable } from "../../Event/fakeData";
+import {
+  mastersMain,
+  mastersTable,
+  mastersTable2,
+  mastersTable3,
+} from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
@@ -18,18 +23,24 @@ function MastersPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          {mastersMain2.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
           <div className="mb-14">
             <ListForm
               title={mastersTable[0].Title}
               Data={mastersTable[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={mastersTable2[0].Title}
+              Data={mastersTable2[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={mastersTable3[0].Title}
+              Data={mastersTable3[0].linkList}
               type=""
             />
           </div>
@@ -50,19 +61,25 @@ function MastersPage({ isScrolled, isWide }) {
                 type={false}
               />
             ))}
-            {mastersMain2.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
           </div>
           <div className="my-6">
             <ListForm
               title={mastersTable[0].Title}
               Data={mastersTable[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={mastersTable2[0].Title}
+              Data={mastersTable2[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
+              title={mastersTable3[0].Title}
+              Data={mastersTable3[0].linkList}
               type=""
             />
           </div>
