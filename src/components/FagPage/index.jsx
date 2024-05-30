@@ -14,7 +14,7 @@ function FagPage({ isScrolled, isWide }) {
             <ListForm
               title={fagTables[0].Title}
               Data={fagTables[0].linkList}
-              type=""
+              type="fagList"
             />
           </div>
         </>
@@ -29,7 +29,7 @@ function FagPage({ isScrolled, isWide }) {
             <ListForm
               title={fagTables[0].Title}
               Data={fagTables[0].linkList}
-              type=""
+              type="fagList"
             />
           </div>
         </div>

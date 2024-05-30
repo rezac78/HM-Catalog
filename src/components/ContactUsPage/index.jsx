@@ -2,6 +2,7 @@ import {
   ContactUsTables,
   ContactUsTables2,
   ContactUsTables3,
+  ContactUsTables4,
 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
@@ -21,7 +22,13 @@ function ContactUsPage({ isScrolled, isWide }) {
               type="listLink"
             />
           </div>
-         
+          <div className="mb-12">
+            <ListForm
+              title={ContactUsTables4[0].Title}
+              Data={ContactUsTables4[0].linkList}
+              type="listLink"
+            />
+          </div>
           <div className="mb-12">
             <ListForm
               title={ContactUsTables[0].Title}
@@ -48,6 +55,13 @@ function ContactUsPage({ isScrolled, isWide }) {
             <ListForm
               title={ContactUsTables3[0].Title}
               Data={ContactUsTables3[0].linkList}
+              type="listLink"
+            />
+          </div>
+          <div className="my-6">
+            <ListForm
+              title={ContactUsTables4[0].Title}
+              Data={ContactUsTables4[0].linkList}
               type="listLink"
             />
           </div>

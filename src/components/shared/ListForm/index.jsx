@@ -53,9 +53,35 @@ function ListForm({ title, Data, type }) {
                   ) : e.type === "tags" ? (
                     <BoaldLine matn={e.item} />
                   ) : (
-                    e.item
+                    <>
+                      {type === "fagList" ? (
+                        <>
+                          <span className="text-blue pl-1">{e.item}</span>
+                          <span className="">{e.item1}</span>
+                        </>
+                      ) : (
+                        e.item
+                      )}
+                    </>
                   )}
-
+                  {e.location && (
+                    <div className="my-5">
+                      <a
+                        href={"https://zaya.io/Hamrahanoffice"}
+                        target={"_blank"}
+                        className=""
+                        rel="noreferrer"
+                      >
+                        <img
+                          className={"w-full h-[118px] object-cover"}
+                          src={"/images/contact-map.png"}
+                          alt={"map-location"}
+                          width={1174}
+                          height={118}
+                        />
+                      </a>
+                    </div>
+                  )}
                   {e.linkAddress && (
                     <LinkShare
                       linkAddress={e.linkAddress}

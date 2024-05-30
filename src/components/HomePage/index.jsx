@@ -1,10 +1,6 @@
 import HomeContentPage from "../shared/HomeContentPage";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import {
-  homeMain,
-  homeMainCard,
-  homeDeskTopMainCard,
-} from "../../Event/fakeData";
+import { homeMain, homeMainCard } from "../../Event/fakeData";
 import CardMain from "../shared/CardMain";
 import CardDeskTop from "../DeskTop/CardMain";
 import HeaderScroll from "../shared/HeaderScroll";

@@ -79,3 +79,7 @@ code {
     0%,40%  {transform: rotate(0)}
     60%,100%{transform: rotate(90deg)}
   }
+
+  .text-number {
+    color: #1E73BF;
+  }

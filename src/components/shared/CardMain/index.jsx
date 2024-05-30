@@ -8,7 +8,7 @@ function CardMain({ Title, Image, link, type }) {
       className={`bg-[#387AB4] hover:bg-[#316A99] active:bg-[#28537A] focus:outline-none focus:ring focus:ring-[#28537A]  rounded-lg ${
         type
           ? "pt-2 w-28 h-28"
-          : "pt-1 w-[170px] h-[65px] md:w-[270px] md:h-[90px]"
+          : "pt-1 w-[170px] h-[65px] md:w-[250px] md:h-[80px]"
       }`}
     >
       {type && (
