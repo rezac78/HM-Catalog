@@ -7,7 +7,7 @@ import HeaderTitle from "../shared/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
-import { Link } from "react-router-dom";
+import CardMain from "../shared/CardMain";
 
 function AdditionsPage({ isScrolled, isWide }) {
   return (
@@ -27,16 +27,16 @@ function AdditionsPage({ isScrolled, isWide }) {
               type="listNumber"
             />
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {additionsCard.map((e) => (
-              <Link
-                to={e.link}
-                className={`bg-blue hover:bg-hoverBlue focus:outline-none focus:ring rounded-lg p-3 w-[150px]  md:w-[270px]`}
-              >
-                <span className="flex align-center text-center justify-center text-whiteColor text-[14px] md:text-[20px]">
-                  {e.Title}
-                </span>
-              </Link>
+              <CardMain
+                key={e.id}
+                Title={e.Title}
+                Image={e.image}
+                link={e.link}
+                type={false}
+                CrdForPage={"additions"}
+              />
             ))}
           </div>
         </>
@@ -59,16 +59,16 @@ function AdditionsPage({ isScrolled, isWide }) {
               type="listNumber"
             />
           </div>
-          <div className="grid grid-cols-2 self-center gap-2 md:flex flex-wrap md:justify-center py-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {additionsCard.map((e) => (
-              <Link
-                to={e.link}
-                className={`bg-blue hover:bg-hoverBlue focus:outline-none focus:ring rounded-lg p-3 w-[150px]  md:w-[270px]`}
-              >
-                <span className="flex align-center text-center justify-center text-whiteColor text-[14px] md:text-[20px]">
-                  {e.Title}
-                </span>
-              </Link>
+              <CardMain
+                key={e.id}
+                Title={e.Title}
+                Image={e.image}
+                link={e.link}
+                type={false}
+                CrdForPage={"additions"}
+              />
             ))}
           </div>
         </div>

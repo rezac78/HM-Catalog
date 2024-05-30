@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-function CardMain({ Title, Image, link, type }) {
+function CardMain({ Title, Image, link, type, CrdForPage }) {
   return (
     <Link
       to={link}
@@ -21,7 +21,7 @@ function CardMain({ Title, Image, link, type }) {
           />
         </div>
       )}
-      <span className="flex align-center justify-center text-[#ffff] py-4 md:py-6 text-[14px] md:text-[20px]">
+      <span className={`flex align-center justify-center text-[#ffff] py-4 md:py-6 ${CrdForPage === "additions" ? "text-[11px] md:text-[16px]" : "text-[14px] md:text-[20px]"} `}>
         {Title}
       </span>
     </Link>

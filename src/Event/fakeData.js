@@ -4896,12 +4896,12 @@ export const gloryButton = [
     img: "/icon/award.svg",
     href: "/achievements",
   },
-  {
-    id: 2,
-    Title: "رضایت‌ مندی",
-    img: "/icon/image-370.svg",
-    href: "/satisfaction",
-  },
+  // {
+  //   id: 2,
+  //   Title: "رضایت‌ مندی",
+  //   img: "/icon/image-370.svg",
+  //   href: "/satisfaction",
+  // },
 ];
 export const AchievementsButton = [
   // {

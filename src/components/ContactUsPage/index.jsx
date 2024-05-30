@@ -1,7 +1,6 @@
 import {
   ContactUsTables,
   ContactUsTables2,
-  ConsultationMainTable2,
   ContactUsTables3,
   ContactUsTables4,
 } from "../../Event/fakeData";

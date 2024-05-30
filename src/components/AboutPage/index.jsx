@@ -21,7 +21,7 @@ function AboutPage({ isScrolled, isWide }) {
             />
           ))}
           <BoaldLine matn="مفتخریم بگوییم که تا به امروز بیش از 9 هزار نفر موسسه‌ «همراهان فردای روشن»  را برای ادامه‌ مسیر تحصیلی خود انتخاب نموده ‌اند." />
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {AboutMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -50,7 +50,7 @@ function AboutPage({ isScrolled, isWide }) {
             ))}
             <BoaldLine matn="مفتخریم بگوییم که تا به امروز بیش از 9 هزار نفر موسسه‌ «همراهان فردای روشن»  را برای ادامه‌ مسیر تحصیلی خود انتخاب نموده ‌اند." />
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pt-5 mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {AboutMainCard.map((e) => (
               <CardMain
                 key={e.id}

@@ -31,7 +31,7 @@ function languageLearningPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {languageLearningMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -70,7 +70,7 @@ function languageLearningPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-center py-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {languageLearningMainCard.map((e) => (
               <CardMain
                 key={e.id}

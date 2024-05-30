@@ -1,11 +1,7 @@
 import {
-  metacodeMain,
   metacodeMain2,
-  metacodeMain3,
-  metacodeMainCard,
   metaTagMainCard,
 } from "../../Event/fakeData";
-import ListForm from "../shared/ListForm";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HomeContentPage from "../shared/HomeContentPage";
@@ -26,7 +22,7 @@ function MetacodePage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around mb-14">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {metaTagMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -55,7 +51,7 @@ function MetacodePage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-center py-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {metaTagMainCard.map((e) => (
               <CardMain
                 key={e.id}

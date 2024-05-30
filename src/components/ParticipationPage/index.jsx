@@ -19,7 +19,7 @@ function ParticipationPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pb-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {ParticipationCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -48,7 +48,7 @@ function ParticipationPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-6 md:flex flex-wrap md:justify-around pb-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {ParticipationCard.map((e) => (
               <CardMain
                 key={e.id}
