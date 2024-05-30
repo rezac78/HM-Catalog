@@ -340,7 +340,7 @@ export const path = [
     component: "satisfaction",
     linkList: [
       { id: 1, item: "افتخارات", link: "/glory" },
-      { id: 2, item: "رضایتمندی", link: "/satisfaction" },
+      { id: 2, item: "رضایتمندی", link: "/consent" },
     ],
   },
   {
@@ -4930,7 +4930,7 @@ export const gloryButton = [
     id: 2,
     Title: "رضایت‌ مندی",
     img: "/icon/image-370.svg",
-    href: "/satisfaction",
+    href: "/consent",
   },
 ];
 export const AchievementsButton = [
