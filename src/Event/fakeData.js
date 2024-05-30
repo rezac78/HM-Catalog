@@ -997,7 +997,7 @@ export const MastersGraduatesMain = [
   {
     id: 1,
     content:
-      "همراهان مفتخر است از طریق همکاری با دانشگاه­های طرف قرارداد در مدت زمان مشخص فرآیند تحصیل تعدادی از عزیزان را در مقاطع مختلف به پایان برساند.",
+      "ما در همراهان افتخار این را داشته ایم که بیش از 2500 دانشجو را در مقاطع مختلف دانشگاهی از شروع تا فارغ التحصیلی همراهی کنیم .",
   },
 ];
 export const MastersGraduatesMainTitle = [
@@ -2855,6 +2855,12 @@ export const ContactUsTables3 = [
         id: 2,
         item: "شعبه 1  تهران، میرداماد، میدان مادر، خیابان سنجابی، بعد از کوچه یکم، ساختمان پاسارگاد، پلاک ۱۳ واحد ۴۰۷",
         location: true,
+      },
+      {
+        id: 3,
+        title: "شماره تماس :",
+        linkAddress: "۰۲۱۹۱۰۹۷۷۳۳",
+        HrefAddress: "+02191097733",
       },
     ],
   },
@@ -4898,24 +4904,24 @@ export const gloryButton = [
   },
 ];
 export const AchievementsButton = [
-  {
-    id: 1,
-    Title: "دانشجویان",
-    img: "/icon/image-373.svg",
-    href: "/Students",
-  },
+  // {
+  //   id: 1,
+  //   Title: "دانشجویان",
+  //   img: "/icon/image-373.svg",
+  //   href: "/Students",
+  // },
   {
     id: 2,
     Title: "فارغ التحصیلان",
     img: "/icon/image-375.svg",
     href: "/mastersGraduates",
   },
-  {
-    id: 3,
-    Title: "کتب و مقالات",
-    img: "/icon/image-377.svg",
-    href: "#",
-  },
+  // {
+  //   id: 3,
+  //   Title: "کتب و مقالات",
+  //   img: "/icon/image-377.svg",
+  //   href: "#",
+  // },
 ];
 export const MastersGraduatesButton = [
   {

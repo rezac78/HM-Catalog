@@ -18,7 +18,7 @@ function LinkShare({ linkAddress, title, HrefAddress, type }) {
           type === "listLink" ? "" : "text-[14px] md:text-[18px]"
         } pr-1`}
       >
-        {linkAddress}
+        {linkAddress === "۰۲۱۹۱۰۹۷۷۳۳" ? <span className="text-[16px] ">{linkAddress}</span> : linkAddress }
       </a>
     </div>
   );
