@@ -20,7 +20,6 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <HeaderTitle
             title="طرح  کسب درآمد"
             titleLink="/languageLearning"
-            showIcon={false}
           />
           {IncomeGenerationMain.map((e) => (
             <HomeContentPage
@@ -89,7 +88,6 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <HeaderTitle
             title="طرح  کسب درآمد"
             titleLink="/languageLearning"
-            showIcon={false}
           />
           <div className="mx-auto my-10">
             {IncomeGenerationMain.map((e) => (

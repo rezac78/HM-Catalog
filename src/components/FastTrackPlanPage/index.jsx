@@ -29,12 +29,14 @@ function FastTrackPlanPage({ isScrolled, isWide }) {
             Data={FastTrackPlanTable[0].linkList}
             type=""
           />
-          <HeaderTitle title="فرآیند اجرایی" titleLink="/" showIcon={false} />
-          <ListForm
-            title={FastTrackPlanTable2[0].Title}
-            Data={FastTrackPlanTable2[0].linkList}
-            type=""
-          />
+          <div className="my-5">
+            <HeaderTitle title="فرآیند اجرایی" titleLink="/" showIcon={false} />
+            <ListForm
+              title={FastTrackPlanTable2[0].Title}
+              Data={FastTrackPlanTable2[0].linkList}
+              type=""
+            />
+          </div>
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">

@@ -1,5 +1,3 @@
-import HomeContentPage from "../shared/HomeContentPage";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { benefitsTables } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
@@ -16,14 +14,6 @@ function BenefitPage({ isScrolled, isWide }) {
               title={benefitsTables[0].Title}
               Data={benefitsTables[0].linkList}
               type="listNumber"
-            />
-          </div>
-          <div className="my-14 mx-auto">
-            <LazyLoadImage
-              effect="blur"
-              alt="notFound"
-              src="/images/chart.svg"
-              className="w-full h-full"
             />
           </div>
         </>
