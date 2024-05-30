@@ -4872,20 +4872,30 @@ export const CollaborateTable3 = [
 export const consentTable = [
   {
     id: 1,
-    Title: "مقطع دکتری",
+    Title: "مقطع کارشناسی",
     file: [
-      { id: 1, sound: "/sound/1.mp3" },
-      { id: 2, sound: "/sound/1.mp3" },
+      { id: 1, sound: "/sound/master2/1.mp3" },
+      { id: 2, sound: "/sound/master2/2.mp3" },
     ],
   },
   {
     id: 2,
+    Title: "مقطع ارشد",
+    file: [
+      { id: 1, sound: "/sound/master/1.mp3" },
+      { id: 2, sound: "/sound/master/2.mp3" },
+      { id: 3, sound: "/sound/master/3.mp3" },
+      { id: 4, sound: "/sound/master/4.mp3" },
+    ],
+  },
+  {
+    id: 3,
     Title: "مقطع دکتری",
     file: [
-      { id: 1, sound: "/sound/1.mp3" },
-      { id: 2, sound: "/sound/1.mp3" },
-      { id: 2, sound: "/sound/1.mp3" },
-      { id: 2, sound: "/sound/1.mp3" },
+      { id: 1, sound: "/sound/PHD/1.mp3" },
+      { id: 2, sound: "/sound/PHD/2.mp3" },
+      { id: 3, sound: "/sound/PHD/3.mp3" },
+      { id: 4, sound: "/sound/PHD/4.mp3" },
     ],
   },
 ];
@@ -4896,20 +4906,20 @@ export const gloryButton = [
     img: "/icon/award.svg",
     href: "/achievements",
   },
-  // {
-  //   id: 2,
-  //   Title: "رضایت‌ مندی",
-  //   img: "/icon/image-370.svg",
-  //   href: "/satisfaction",
-  // },
+  {
+    id: 2,
+    Title: "رضایت‌ مندی",
+    img: "/icon/image-370.svg",
+    href: "/satisfaction",
+  },
 ];
 export const AchievementsButton = [
-  // {
-  //   id: 1,
-  //   Title: "دانشجویان",
-  //   img: "/icon/image-373.svg",
-  //   href: "/Students",
-  // },
+  {
+    id: 1,
+    Title: "دانشجویان",
+    img: "/icon/image-373.svg",
+    href: "/Students",
+  },
   {
     id: 2,
     Title: "فارغ التحصیلان",
