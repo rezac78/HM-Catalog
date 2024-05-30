@@ -39,7 +39,7 @@ function UniversityPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 md:flex flex-wrap md:justify-around">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {universityMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -85,7 +85,7 @@ function UniversityPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="grid grid-cols-2 self-center gap-2 gap-y-5 md:flex flex-wrap md:justify-center py-10">
+          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {universityMainCard.map((e) => (
               <CardMain
                 key={e.id}
