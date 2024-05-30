@@ -1,11 +1,9 @@
 import HomeContentPage from "../shared/HomeContentPage";
-import {
-  permissionsMain,
-} from "../../Event/fakeData";
+import { permissionsMain, ImageSwiper } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
-import ImagePart from "../shared/ImagePart";
+import SliderImage from "../shared/SilderImage";
 function PermissionsPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
@@ -20,7 +18,9 @@ function PermissionsPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <ImagePart imageUrl={"/images/backImage.png"} />
+          <div className="flex mx-auto w-10/12 ">
+            <SliderImage images={ImageSwiper} />
+          </div>
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -39,7 +39,9 @@ function PermissionsPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <ImagePart imageUrl={"/images/backImage.png"} />
+          <div className="flex mx-auto w-5/12 ">
+            <SliderImage images={ImageSwiper} />
+          </div>
         </div>
       )}
     </HeaderScroll>

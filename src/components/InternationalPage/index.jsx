@@ -1,4 +1,3 @@
-import HomeContentPage from "../shared/HomeContentPage";
 import { InternationalTable } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";

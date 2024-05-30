@@ -685,6 +685,26 @@ export const permissionsMain = [
       "موسسه «همراهان فردای روشن» با توجه به بند مسئولیت اجتماعی در سند استراتژیک خود، در راستای افزایش بهبود مهارت‌ نیروهای متخصص و توسعه دانش‌های تخصصی آن‌ها، با همراهی و تفاهم با دانشگاه پیام‌نور در تلاش است تا سهمی هرچند کوچک در توسعه و آبادانی کشور عزیزمان داشته باشد. شما می‌توانید در ادامه نمونه‌ای از مجوزهای اخذ شده توسط موسسه «همراهان فردای روشن» را مشاهده فرمایید.",
   },
 ];
+export const ImageSwiper = [
+  "/images/1.jpeg",
+  "/images/2.jpeg",
+  "/images/3.jpeg",
+  "/images/4.jpeg",
+  "/images/5.jpeg",
+  "/images/6.jpeg",
+  "/images/7.jpeg",
+  "/images/8.jpeg",
+  "/images/9.jpeg",
+  "/images/10.jpeg",
+  "/images/11.jpeg",
+  "/images/12.jpeg",
+  "/images/13.jpeg",
+  "/images/14.jpeg",
+  "/images/15.jpeg",
+  "/images/16.jpeg",
+  "/images/17.jpeg",
+  "/images/18.jpeg",
+];
 export const CooperationMain = [
   {
     id: 1,
