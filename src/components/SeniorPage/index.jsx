@@ -26,13 +26,13 @@ function MastersPage({ isScrolled, isWide }) {
           ))}
           <HeaderTitle title="مشکلات و موانع تحصیل در مقطع کارشناسی ارشد" titleLink="" showIcon={false} />
           <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
-          {/* <div className="mb-14">
+          <div className="mb-14">
             <ListForm
               title={mastersTable[0].Title}
               Data={mastersTable[0].linkList}
               type=""
             />
-          </div> */}
+          </div>
           <div className="mb-14">
             <ListForm
               title={mastersTable2[0].Title}
@@ -41,13 +41,13 @@ function MastersPage({ isScrolled, isWide }) {
             />
           </div>
           <div className="mb-14">
-            {/* <ListForm
+            <HeaderTitle title="قدم به قدم تا اخذ مدرک کارشناسی ارشد" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
+            <ListForm
               title={mastersTable3[0].Title}
               Data={mastersTable3[0].linkList}
               type=""
-            /> */}
-            <HeaderTitle title="قدم به قدم تا اخذ مدرک کارشناسی ارشد" titleLink="" showIcon={false} />
-            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+            />
           </div>
         </>
       ) : (
@@ -73,19 +73,26 @@ function MastersPage({ isScrolled, isWide }) {
           </div>
           <div className="mb-14">
             <ListForm
+              title={mastersTable[0].Title}
+              Data={mastersTable[0].linkList}
+              type=""
+            />
+          </div>
+          <div className="mb-14">
+            <ListForm
               title={mastersTable2[0].Title}
               Data={mastersTable2[0].linkList}
               type=""
             />
           </div>
           <div className="mb-14">
-            {/* <ListForm
+            <HeaderTitle title="قدم به قدم تا اخذ مدرک کارشناسی ارشد" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
+            <ListForm
               title={mastersTable3[0].Title}
               Data={mastersTable3[0].linkList}
               type=""
-            /> */}
-            <HeaderTitle title="قدم به قدم تا اخذ مدرک کارشناسی ارشد" titleLink="" showIcon={false} />
-            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
+            />
           </div>
         </div>
       )}

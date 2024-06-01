@@ -26,11 +26,11 @@ function PHDmastersPage({ isScrolled, isWide }) {
           ))}
           <div className="mb-14">
             <ImagePart width="100%" imageUrl={"/poster/ویژگی های تحصیل در برنامه ویژه همراهان در مقاطع کارشناسی ارشد و دکتری.png"} />
-            {/* <ListForm
+            <ListForm
               title={PHDmastersMainTable[0].Title}
               Data={PHDmastersMainTable[0].linkList}
               type=""
-            /> */}
+            />
           </div>
           <div className="mb-14">
             <ListForm
@@ -66,11 +66,11 @@ function PHDmastersPage({ isScrolled, isWide }) {
           </div>
           <div className="my-6">
             <ImagePart width="70%" imageUrl={"/poster/ویژگی های تحصیل در برنامه ویژه همراهان در مقاطع کارشناسی ارشد و دکتری.png"} />
-            {/* <ListForm
+            <ListForm
               title={PHDmastersMainTable[0].Title}
               Data={PHDmastersMainTable[0].linkList}
               type=""
-            /> */}
+            />
           </div>
           <div className="my-6">
             <ListForm

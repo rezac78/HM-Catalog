@@ -27,14 +27,14 @@ function MastersPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          {/* <div className="mb-14">
+          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+          <div className="mb-14">
             <ListForm
               title={seniorTables[0].Title}
               Data={seniorTables[0].linkList}
               type="listNumber"
             />
-          </div> */}
-          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+          </div>
 
           <div className="mb-14">
             <ListForm
@@ -57,12 +57,13 @@ function MastersPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
+          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
           <div className="mb-14">
-            {/* <ListForm
+            <ListForm
               title={seniorTables5[0].Title}
               Data={seniorTables5[0].linkList}
               type=""
-            /> */}
+            />
           </div>
         </>
       ) : (
@@ -82,14 +83,14 @@ function MastersPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
-          {/* <div className="my-6">
-            <ListForm
-              title={seniorTables[0].Title}
-              Data={seniorTables[0].linkList}
-              type="listNumber"
-            />
-          </div> */}
+          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+          <div className="my-6">
+             <ListForm
+               title={seniorTables[0].Title}
+               Data={seniorTables[0].linkList}
+               type="listNumber"
+             />
+           </div>
           <div className="my-6">
             <ListForm
               title={seniorTables2[0].Title}
@@ -113,11 +114,11 @@ function MastersPage({ isScrolled, isWide }) {
           </div>
           <div className="mb-14">
           <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
-            {/* <ListForm
+            <ListForm
               title={seniorTables5[0].Title}
               Data={seniorTables5[0].linkList}
               type=""
-            /> */}
+            />
           </div>
         </div>
       )}
