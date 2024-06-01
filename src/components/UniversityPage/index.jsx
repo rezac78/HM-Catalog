@@ -3,12 +3,11 @@ import {
   universityMainCard,
   universityMain,
   universityMain2,
-  universityTable,
 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import CardMain from "../shared/CardMain";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
-import ListForm from "../shared/ListForm";
+import ImagePart from "../shared/ImagePart";
 import HeaderScroll from "../shared/HeaderScroll";
 function UniversityPage({ isScrolled, isWide }) {
   return (
@@ -24,11 +23,12 @@ function UniversityPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <ListForm
+          {/* <ListForm
             title={universityTable[0].Title}
             Data={universityTable[0].linkList}
             type=""
-          />
+          /> */}
+          <ImagePart width="90%" imageUrl={"/poster/مزایای تجربه کار با همراهان.png"} />
           <div className="mx-auto mb-5">
             {universityMain2.map((e) => (
               <HomeContentPage
@@ -69,11 +69,7 @@ function UniversityPage({ isScrolled, isWide }) {
             ))}
           </div>
           <div className="my-2">
-            <ListForm
-              title={universityTable[0].Title}
-              Data={universityTable[0].linkList}
-              type=""
-            />
+          <ImagePart width="70%" imageUrl={"/poster/مزایای تجربه کار با همراهان.png"} />
           </div>
           <div className="mx-auto">
             {universityMain2.map((e) => (

@@ -5,6 +5,7 @@ import { SocialMedia } from "../../../Event/fakeData";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import BoaldLine from "../BoaldLine";
+
 function ListForm({ title, Data, type }) {
   return (
     <div
@@ -32,7 +33,7 @@ function ListForm({ title, Data, type }) {
           {type === "File" ? (
             <div className="grid grid-cols-1 md:grid-cols-2 self-center gap-3 ">
               {Data.map((e) => (
-                <SoundPart sound={e.sound} />
+                <SoundPart key={e.sound} sound={e.sound} />
               ))}
             </div>
           ) : (
@@ -60,7 +61,13 @@ function ListForm({ title, Data, type }) {
                           <span className="">{e.item1}</span>
                         </>
                       ) : (
-                        e.item
+                        Array.isArray(e.item) ? (
+                          e.item.map((part, i) => (
+                            <div key={i}>{part}</div>
+                          ))
+                        ) : (
+                          e.item
+                        )
                       )}
                     </>
                   )}
@@ -118,4 +125,5 @@ function ListForm({ title, Data, type }) {
     </div>
   );
 }
+
 export default ListForm;

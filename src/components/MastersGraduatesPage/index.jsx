@@ -39,7 +39,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="mb-5 md:mt-20">
+          {/* <div className="mb-5 md:mt-20">
             {MastersGraduatesButton.map((e) => (
               <Button
                 key={e.id}
@@ -50,7 +50,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
                 Image={e.img}
               />
             ))}
-          </div>
+          </div> */}
           {/* {MastersGraduatesMainTitle2.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -119,7 +119,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="grid grid-cols-2 my-10 ">
+          {/* <div className="grid grid-cols-2 my-10 ">
             {MastersGraduatesButton.map((e) => (
               <Button
                 key={e.id}
@@ -130,7 +130,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
                 Image={e.img}
               />
             ))}
-          </div>
+          </div> */}
           {/* {MastersGraduatesMainTitle2.map((e) => (
             <HomeContentPage
               key={e.id}

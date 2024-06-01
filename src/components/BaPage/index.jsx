@@ -4,6 +4,7 @@ import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HomeContentPage from "../shared/HomeContentPage";
 import HeaderScroll from "../shared/HeaderScroll";
+import ImagePart from "../shared/ImagePart";
 
 function BAPage({ isScrolled, isWide }) {
   return (
@@ -11,14 +12,16 @@ function BAPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="BA" titleLink="/design" />
-          {baMain.map((e) => (
+          <ImagePart width="100%" imageUrl={"/poster/BA.png"} />
+          <ImagePart width="100%" imageUrl={"/poster/تفاوت دوره BA دانشگاه پیام‌نور با موسسات دیگر.png"} />
+          {/* {baMain.map((e) => (
             <HomeContentPage
               key={e.id}
               title={e.Title}
               content={e.content}
               type={false}
             />
-          ))}
+          ))} */}
           <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {baMainCard.map((e) => (
               <CardMain
@@ -30,6 +33,7 @@ function BAPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
+          <ImagePart width="100%" imageUrl={"/poster/تحصیل در دوره های baبرای چه کسانی مناسب است؟.png"} />
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -38,15 +42,11 @@ function BAPage({ isScrolled, isWide }) {
           </div>
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle title="BA" titleLink="/design" />
-          <div className="mx-auto my-10">
-            {baMain.map((e) => (
-              <HomeContentPage
-                key={e.id}
-                title={e.Title}
-                content={e.content}
-                type={false}
-              />
-            ))}
+          <div className="flex justify-center">
+            <ImagePart width="90%" imageUrl={"/poster/BA.png"} />
+          </div>
+          <div className="flex justify-center">
+            <ImagePart width="90%" imageUrl={"/poster/تفاوت دوره BA دانشگاه پیام‌نور با موسسات دیگر.png"} />
           </div>
           <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
             {baMainCard.map((e) => (
@@ -59,7 +59,11 @@ function BAPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
+          <div className="flex justify-center">
+            <ImagePart width="90%" imageUrl={"/poster/تحصیل در دوره های baبرای چه کسانی مناسب است؟.png"} />
+          </div>
         </div>
+
       )}
     </HeaderScroll>
   );

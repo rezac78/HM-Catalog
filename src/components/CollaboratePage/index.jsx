@@ -10,6 +10,7 @@ import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
+import ImagePart from "../shared/ImagePart";
 function CollaboratePage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
@@ -24,6 +25,7 @@ function CollaboratePage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
+          <ImagePart width="100%" imageUrl={"/poster/مزایا و ارزش های پیشنهادی همراهان فردای روشن.png"} />
           <HeaderTitle
             title="استخدام و همکاری"
             titleLink="/"
@@ -83,6 +85,7 @@ function CollaboratePage({ isScrolled, isWide }) {
               />
             ))}
           </div>
+          <ImagePart width="90%" imageUrl={"/poster/مزایا و ارزش های پیشنهادی همراهان فردای روشن.png"} />
           <HeaderTitle
             title="استخدام و همکاری"
             titleLink="/"

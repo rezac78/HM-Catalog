@@ -1,14 +1,13 @@
 import HomeContentPage from "../shared/HomeContentPage";
 import {
   PhdMain,
-  PhdMainTable,
   PhdMainTable2,
-  PhdMainTable3,
 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ListForm from "../shared/ListForm";
 import HeaderScroll from "../shared/HeaderScroll";
+import ImagePart from "../shared/ImagePart";
 function PhdPage({ isWide }) {
   return (
     <HeaderScroll>
@@ -24,11 +23,13 @@ function PhdPage({ isWide }) {
             />
           ))}
           <div className="mb-14">
-            <ListForm
+            <HeaderTitle title="مشکلات و موانع تحصیل در مقطع دکتری" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+            {/* <ListForm
               title={PhdMainTable[0].Title}
               Data={PhdMainTable[0].linkList}
               type="listNumber"
-            />
+            /> */}
           </div>
           <div className="mb-14">
             <ListForm
@@ -38,11 +39,13 @@ function PhdPage({ isWide }) {
             />
           </div>
           <div className="mb-14">
-            <ListForm
+            {/* <ListForm
               title={PhdMainTable3[0].Title}
               Data={PhdMainTable3[0].linkList}
               type="listNumber"
-            />
+            /> */}
+            <HeaderTitle title="قدم به قدم تا اخذ مدرک دکتری" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150254_347.jpg"} />
           </div>
         </>
       ) : (
@@ -63,11 +66,13 @@ function PhdPage({ isWide }) {
             ))}
           </div>
           <div className="my-6">
-            <ListForm
+            <HeaderTitle title="مشکلات و موانع تحصیل در مقطع دکتری" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
+            {/* <ListForm
               title={PhdMainTable[0].Title}
               Data={PhdMainTable[0].linkList}
               type="listNumber"
-            />
+            /> */}
           </div>
           <div className="mb-14">
             <ListForm
@@ -77,11 +82,13 @@ function PhdPage({ isWide }) {
             />
           </div>
           <div className="mb-14">
-            <ListForm
+            <HeaderTitle title="قدم به قدم تا اخذ مدرک دکتری" titleLink="" showIcon={false} />
+            <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150254_347.jpg"} />
+            {/* <ListForm
               title={PhdMainTable3[0].Title}
               Data={PhdMainTable3[0].linkList}
               type="listNumber"
-            />
+            /> */}
           </div>
         </div>
       )}
