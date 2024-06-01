@@ -68,7 +68,7 @@ function PermissionsPage({ isScrolled, isWide }) {
       }}
     >
       {currentImage && (
-        <img src={currentImage} className=" h-[90vh]" alt="Zoomed" />
+        <img src={currentImage} className="h-[70vh] sm:h-[90vh]" alt="Zoomed" />
       )}
     </Modal>
   </HeaderScroll>
