@@ -71,7 +71,7 @@ function ChartPage({ isScrolled, isWide }) {
           }
         }}
       >
-        <img src="/images/chart.svg" alt="Chart" style={{ width: '100%' }} />
+        <img src="/images/chart.svg" className="h-[90vh]" alt="Chart"/>
       </Modal>
     </HeaderScroll>
   );
