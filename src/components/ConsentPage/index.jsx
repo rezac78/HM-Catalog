@@ -12,7 +12,7 @@ function ConsentPage() {
           <HeaderDeskTopTitle Title="موسسه مشاوره بازاریابی بین‌المللی همراهان فردایی روشن" />
         </div>
         <div className="border-t-2 border-blue-50 w-full flex mx-auto mt-5 mb-10"></div>
-        <HeaderTitle title="رضایت مندی" titleLink="/design" />
+        <HeaderTitle title="رضایت مندی" titleLink="/glory" />
         {ConsentMain.map((e) => (
           <HomeContentPage
             key={e.id}

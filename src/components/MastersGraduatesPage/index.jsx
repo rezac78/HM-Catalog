@@ -51,7 +51,27 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          {MastersGraduatesMainTitle2.map((e) => (
+          {/* {MastersGraduatesMainTitle2.map((e) => (
+            <HomeContentPage
+              key={e.id}
+              title={e.Title}
+              content={e.content}
+              type={false}
+            />
+          ))} */}
+          {/* <div className="mb-5 md:mt-20">
+            {MastersGraduatesButton.map((e) => (
+              <Button
+                key={e.id}
+                type="card"
+                shortTitle={e.shortTitle}
+                href={e.href}
+                title={e.Title}
+                Image={e.img}
+              />
+            ))}
+          </div> */}
+          {/* {MastersGraduatesMainTitle3.map((e) => (
             <HomeContentPage
               key={e.id}
               title={e.Title}
@@ -70,27 +90,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
                 Image={e.img}
               />
             ))}
-          </div>
-          {MastersGraduatesMainTitle3.map((e) => (
-            <HomeContentPage
-              key={e.id}
-              title={e.Title}
-              content={e.content}
-              type={false}
-            />
-          ))}
-          <div className="mb-5 md:mt-20">
-            {MastersGraduatesButton.map((e) => (
-              <Button
-                key={e.id}
-                type="card"
-                shortTitle={e.shortTitle}
-                href={e.href}
-                title={e.Title}
-                Image={e.img}
-              />
-            ))}
-          </div>
+          </div> */}
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -131,7 +131,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          {MastersGraduatesMainTitle2.map((e) => (
+          {/* {MastersGraduatesMainTitle2.map((e) => (
             <HomeContentPage
               key={e.id}
               title={e.Title}
@@ -158,8 +158,8 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
               content={e.content}
               type={false}
             />
-          ))}
-          <div className="grid grid-cols-2 my-10">
+          ))} */}
+          {/* <div className="grid grid-cols-2 my-10">
             {MastersGraduatesButton3.map((e) => (
               <Button
                 key={e.id}
@@ -170,7 +170,7 @@ function MastersGraduatesPage({ isScrolled, isWide }) {
                 Image={e.img}
               />
             ))}
-          </div>
+          </div> */}
         </div>
       )}
     </HeaderScroll>

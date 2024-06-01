@@ -2,6 +2,7 @@ import "./App.css";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import 'react-responsive-modal/styles.css';
 import React, { Suspense, lazy, useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";

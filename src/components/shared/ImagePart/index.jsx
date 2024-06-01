@@ -1,8 +1,8 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-function ImagePart({ imageUrl }) {
+function ImagePart({ imageUrl, onClick }) {
   return (
-    <div className="my-14">
+    <div onClick={onClick} className="my-14 cursor-pointer">
       <LazyLoadImage
         effect="blur"
         alt="notFound"

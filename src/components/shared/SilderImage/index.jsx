@@ -1,9 +1,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import { Autoplay, Navigation } from "swiper/modules";
 
-const SliderImage = ({ images }) => {
+const SliderImage = ({ images, onImageClick }) => {
   return (
     <Swiper
       spaceBetween={30}
@@ -18,7 +17,12 @@ const SliderImage = ({ images }) => {
     >
       {images.map((image, index) => (
         <SwiperSlide key={index}>
-          <img src={image} alt={`slide-${index}`} className="w-full h-auto" />
+          <img
+            src={image}
+            alt={`slide-${index}`}
+            className="w-full h-auto cursor-pointer"
+            onClick={() => onImageClick(image)}
+          />
         </SwiperSlide>
       ))}
     </Swiper>
