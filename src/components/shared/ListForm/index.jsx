@@ -8,7 +8,7 @@ import BoaldLine from "../BoaldLine";
 
 function ListForm({ title, Data, type }) {
   const formatText = (text) => {
-    return text.split(':').map((part, index, array) => (
+    return text?.split(':').map((part, index, array) => (
       <React.Fragment key={index}>
         {index < array.length - 1 ? (
           <>
