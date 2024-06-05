@@ -8,6 +8,7 @@ import ListForm from "../shared/ListForm";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
 import CardMain from "../shared/CardMain";
+import ImagePart from "../shared/ImagePart";
 
 function AdditionsPage({ isScrolled, isWide }) {
   return (
@@ -15,6 +16,12 @@ function AdditionsPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="چرا همراهان" titleLink="/" />
+          <ImagePart
+            width="100%"
+            imageUrl={
+              "/poster/برشی از همکاری ها و سوابق همراهان فردای روشن.png"
+            }
+          />
           <div className="mb-14">
             <ListForm
               title={additionsTable[0].Title}
@@ -27,7 +34,7 @@ function AdditionsPage({ isScrolled, isWide }) {
               type="listNumber"
             />
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6">
             {additionsCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -48,6 +55,12 @@ function AdditionsPage({ isScrolled, isWide }) {
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle title="چرا همراهان" titleLink="/" />
           <div className="max-w-[1300px] m-auto my-10">
+            <ImagePart
+              width="100%"
+              imageUrl={
+                "/poster/برشی از همکاری ها و سوابق همراهان پستر فردای روشن.png"
+              }
+            />
             <ListForm
               title={additionsTable[0].Title}
               Data={additionsTable[0].linkList}

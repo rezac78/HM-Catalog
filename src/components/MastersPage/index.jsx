@@ -28,7 +28,7 @@ function MastersPage({ isScrolled, isWide }) {
             />
           ))}
           <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150307_912.jpg"} />
-          <div className="mb-14">
+          <div className="mb-5">
             <ListForm
               title={seniorTables[0].Title}
               Data={seniorTables[0].linkList}
@@ -50,21 +50,22 @@ function MastersPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
-          <div className="mb-14">
+          <div className="mb-5">
             <ListForm
               title={seniorTables4[0].Title}
               Data={seniorTables4[0].linkList}
               type=""
             />
           </div>
-          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
-          <div className="mb-14">
+          <ImagePart width="100%" imageUrl={"/poster/آمار رسمی.png"} />
+          <div className="mb-5">
             <ListForm
               title={seniorTables5[0].Title}
               Data={seniorTables5[0].linkList}
               type=""
             />
           </div>
+          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
         </>
       ) : (
         <div className="max-w-[1300px] mx-auto px-20">
@@ -112,13 +113,14 @@ function MastersPage({ isScrolled, isWide }) {
               type=""
             />
           </div>
+          <ImagePart width="100%" imageUrl={"/poster/آمار-رسمی.png"} />
           <div className="mb-14">
-          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
             <ListForm
               title={seniorTables5[0].Title}
               Data={seniorTables5[0].linkList}
               type=""
             />
+          <ImagePart width="100%" imageUrl={"/poster/IMG_20240601_150258_991.jpg"} />
           </div>
         </div>
       )}

@@ -3,12 +3,14 @@ import {
   universityMainCard,
   universityMain,
   universityMain2,
+  universityTable
 } from "../../Event/fakeData";
 import HeaderTitle from "../shared/HeaderTitle";
 import CardMain from "../shared/CardMain";
 import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import ImagePart from "../shared/ImagePart";
 import HeaderScroll from "../shared/HeaderScroll";
+import ListForm from "../shared/ListForm";
 function UniversityPage({ isScrolled, isWide }) {
   return (
     <HeaderScroll isScrolled={isScrolled}>
@@ -23,12 +25,12 @@ function UniversityPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          {/* <ListForm
+          <ImagePart width="100%" imageUrl={"/poster/مزایای تجربه کار با همراهان.png"} />
+          <ListForm
             title={universityTable[0].Title}
             Data={universityTable[0].linkList}
             type=""
-          /> */}
-          <ImagePart width="90%" imageUrl={"/poster/مزایای تجربه کار با همراهان.png"} />
+          />
           <div className="mx-auto mb-5">
             {universityMain2.map((e) => (
               <HomeContentPage
@@ -39,7 +41,7 @@ function UniversityPage({ isScrolled, isWide }) {
               />
             ))}
           </div>
-          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6">
             {universityMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -69,7 +71,7 @@ function UniversityPage({ isScrolled, isWide }) {
             ))}
           </div>
           <div className="my-2">
-          <ImagePart width="70%" imageUrl={"/poster/مزایای تجربه کار با همراهان.png"} />
+          <ImagePart width="100%" imageUrl={"/poster/مزایای تجربه تحصیلات دانشگاهی با همراهان.png"} />
           </div>
           <div className="mx-auto">
             {universityMain2.map((e) => (

@@ -22,8 +22,8 @@ function ConsentPage() {
           />
         ))}
         <div className="my-6">
-          {consentTable.map((e) => (
-            <ListForm title={e.Title} Data={e.file} type="File" />
+          {consentTable.map((e,index) => (
+            <ListForm key={index} title={e.Title} Data={e.file} type="File" />
           ))}
         </div>
       </div>

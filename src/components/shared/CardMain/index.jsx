@@ -9,7 +9,7 @@ function CardMain({ Title, Image, link, type, CrdForPage }) {
         type
           ? "pt-2 w-28 h-28"
           : "pt-1 w-[170px] h-[65px] md:w-[250px] md:h-[80px]"
-      }`}
+      } last-child-odd:change-card`}
     >
       {type && (
         <div className="flex justify-center">
@@ -21,7 +21,7 @@ function CardMain({ Title, Image, link, type, CrdForPage }) {
           />
         </div>
       )}
-      <span className={`flex align-center justify-center text-[#ffff] py-4 md:py-6 ${CrdForPage === "additions" ? "text-[11px] md:text-[16px]" : "text-[14px] md:text-[20px]"} `}>
+      <span className={`flex align-center justify-center text-[#ffff] ${CrdForPage === "additions" ? "text-[11px] md:text-[16px]  py-5 md:py-6" : "text-[14px] md:text-[20px] py-4 md:py-6"} `}>
         {Title}
       </span>
     </Link>

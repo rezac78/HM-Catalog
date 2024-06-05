@@ -93,3 +93,8 @@ code {
   .react-responsive-modal-container{
     height: auto !important; 
   }
+@media (min-width: 350px) and (max-width: 768px) {
+  .last-child-odd\:change-card:last-child:nth-child(odd) {
+    @apply w-full col-span-2;
+  }
+}

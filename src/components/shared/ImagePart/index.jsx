@@ -4,7 +4,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function ImagePart({ imageUrl, onClick, width = "100%", height = "100%" }) {
   return (
-    <div onClick={onClick} className="my-14 cursor-pointer flex justify-center">
+    <div onClick={onClick} className="my-8 cursor-pointer flex justify-center">
       <LazyLoadImage
         effect="blur"
         alt="notFound"

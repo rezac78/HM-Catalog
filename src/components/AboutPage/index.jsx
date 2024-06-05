@@ -5,6 +5,7 @@ import HeaderDeskTopTitle from "../DeskTop/HeaderTitle";
 import HeaderScroll from "../shared/HeaderScroll";
 import CardMain from "../shared/CardMain";
 import BoaldLine from "../shared/BoaldLine";
+import ImagePart from "../shared/ImagePart";
 
 function AboutPage({ isScrolled, isWide }) {
   return (
@@ -12,6 +13,12 @@ function AboutPage({ isScrolled, isWide }) {
       {!isWide ? (
         <>
           <HeaderTitle title="درباره ما" titleLink="/" />
+          <ImagePart
+            width="100%"
+            imageUrl={
+              "/poster/درباره ما-3.png"
+            }
+          />
           {AboutMain.map((e) => (
             <HomeContentPage
               key={e.id}
@@ -21,7 +28,7 @@ function AboutPage({ isScrolled, isWide }) {
             />
           ))}
           <BoaldLine matn="مفتخریم بگوییم که تا به امروز بیش از 9 هزار نفر موسسه‌ «همراهان فردای روشن»  را برای ادامه‌ مسیر تحصیلی خود انتخاب نموده ‌اند." />
-          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 mt-5">
             {AboutMainCard.map((e) => (
               <CardMain
                 key={e.id}
@@ -39,6 +46,12 @@ function AboutPage({ isScrolled, isWide }) {
           </div>
           <div className="border-t-2 border-blue-50 w-full flex mx-auto mt-5 mb-14"></div>
           <HeaderTitle title="درباره ما" titleLink="/" />
+          <ImagePart
+            width="100%"
+            imageUrl={
+              "/poster/درباره ما.png"
+            }
+          />
           <div className="mx-auto my-10">
             {AboutMain.map((e) => (
               <HomeContentPage

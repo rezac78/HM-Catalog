@@ -19,7 +19,7 @@ function ParticipationPage({ isScrolled, isWide }) {
               type={false}
             />
           ))}
-          <div className="flex flex-wrap items-center justify-center gap-y-5 gap-x-16 py-10">
+          <div className="grid grid-cols-2 self-center gap-3 sm:gap-6 mt-5">
             {ParticipationCard.map((e) => (
               <CardMain
                 key={e.id}
