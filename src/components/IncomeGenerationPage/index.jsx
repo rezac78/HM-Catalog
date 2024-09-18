@@ -19,7 +19,7 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
         <>
           <HeaderTitle
             title="طرح  کسب درآمد"
-            titleLink="/languageLearning"
+            titleLink="/"
           />
           {IncomeGenerationMain.map((e) => (
             <HomeContentPage
@@ -59,7 +59,7 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <div className="my-5">
             <HeaderTitle
               title="اشخاص حقیقی"
-              titleLink="/languageLearning"
+              titleLink="/"
               showIcon={false}
             />
           </div>
@@ -87,7 +87,7 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <div className="border-t-2 border-[#54A0DC] w-full flex mx-auto mt-5 mb-10"></div>
           <HeaderTitle
             title="طرح  کسب درآمد"
-            titleLink="/languageLearning"
+            titleLink="/"
           />
           <div className="mx-auto my-10">
             {IncomeGenerationMain.map((e) => (
@@ -109,7 +109,7 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <div className="my-5">
             <HeaderTitle
               title="اشخاص حقوقی"
-              titleLink="/languageLearning"
+              titleLink="/"
               showIcon={false}
             />
           </div>
@@ -131,7 +131,7 @@ function IncomeGenerationPage({ isScrolled, isWide }) {
           <div className="my-5">
             <HeaderTitle
               title="اشخاص حقوقی"
-              titleLink="/languageLearning"
+              titleLink="/"
               showIcon={false}
             />
           </div>

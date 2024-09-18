@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import SoundPart from "../SoundPart";
 import LinkShare from "../LinkShare";
 import { SocialMedia } from "../../../Event/fakeData";
@@ -7,8 +7,16 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import BoaldLine from "../BoaldLine";
 
 function ListForm({ title, Data, type }) {
+  const audioRefs = useRef([]);
+  const handlePlay = (index) => {
+    audioRefs.current.forEach((audio, i) => {
+      if (audio && i !== index) {
+        audio.pause();
+      }
+    });
+  };
   const formatText = (text) => {
-    return text?.split(':').map((part, index, array) => (
+    return text?.split(":").map((part, index, array) => (
       <React.Fragment key={index}>
         {index < array.length - 1 ? (
           <>
@@ -48,8 +56,13 @@ function ListForm({ title, Data, type }) {
         <span className="text-[14px] font-bold text-grayColor">
           {type === "File" ? (
             <div className="grid grid-cols-1 md:grid-cols-2 self-center gap-3">
-              {Data.map((e) => (
-                <SoundPart key={e.sound} sound={e.sound} />
+              {Data.map((e, index) => (
+                <SoundPart
+                  key={e.sound}
+                  sound={e.sound}
+                  ref={(el) => (audioRefs.current[index] = el)}
+                  onPlay={() => handlePlay(index)}
+                />
               ))}
             </div>
           ) : (
